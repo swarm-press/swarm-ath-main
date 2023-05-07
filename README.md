@@ -5,7 +5,7 @@ The Catalyst Swarm After TownHall is coming up, and we need to plan an online ev
 
 **Workflow 📜**
 Here's the workflow we'll follow:
-1. 📝 Create/Update Registration Forms: Create/update registration forms for breakout rooms and community events. #2
+1. 📝 Create/Update Registration Forms: Create/update registration forms for breakout rooms and community events.
 2. 🖼️ Generate Slides: Generate slides for the announcement based on the registration forms.
 3. 📅 Create/Update Google Calendar: Create/update a Google Calendar with all community events.
 4. 🌐 Set Up Swarm-press Page: Set up the Swarm-press page inside catalystswarm.com website.
@@ -49,4 +49,4 @@ We'll make the announcement in two parts:
 - Second, we'll promote the breakout rooms. We'll share the link to the Swarm-press page and encourage people to visit the website, scan the QR code, and sign up for the breakout rooms they're interested in.
 
 **Deadline ⏰**
-We need to complete this work by May 2nd.
+We need to complete this work by May 9th.
