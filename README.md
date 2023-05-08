@@ -13,11 +13,11 @@ Here's the workflow we'll follow:
 
 ## Tasks 📝
 
-- [x] [Create/Update registration forms for breakout rooms and community events](https://github.com/swarm-press/swarm-ath-main/issues/2#issue-1699284258) - @cauechianca 
-- [x] [Generate/Update slides for the announcement based on the registration forms.](https://github.com/swarm-press/swarm-ath-main/issues/3) - @cauechianca 
+- [x] [Create/Update registration forms for breakout rooms and community events](https://github.com/swarm-press/swarm-ath-main/issues/2#issue-1699284258)
+- [x] [Generate/Update slides for the announcement based on the registration forms.](https://github.com/swarm-press/swarm-ath-main/issues/3)
 - [ ] [Create/Update a Google Calendar with all community events.](https://github.com/swarm-press/swarm-ath-main/issues/4)
-- [ ] [Set up the After TownHall page inside catalystswarm.com website.](https://github.com/swarm-press/swarm-ath-main/issues/5) - @cauechianca 
-- [ ] [Make the announcement in two parts.](https://github.com/swarm-press/swarm-ath-main/issues/6) - Peter
+- [ ] [Set up the After TownHall page inside catalystswarm.com website.](https://github.com/swarm-press/swarm-ath-main/issues/5)
+- [ ] [Make the announcement in two parts.](https://github.com/swarm-press/swarm-ath-main/issues/6)
 
 ## Deadline ⏰
 
