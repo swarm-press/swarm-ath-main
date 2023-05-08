@@ -1,99 +1,195 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>After Town Hall</title>
-    <style>
-      body {
-        background-color: #f2f2f2;
-        font-family: "Black Cooper", sans-serif;
-        color: #333;
-      }
-      header {
-        background-color: #4c5c68;
-        color: #fff;
-        padding: 20px;
-      }
-      section {
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-      }
-      h1 {
-        font-size: 3em;
-        margin: 0 0 10px;
-      }
-      h2 {
-        font-size: 2em;
-        font-weight: bold;
-        margin: 0 0 20px;
-      }
-      p {
-        font-size: 1.2em;
-        margin: 0 0 10px;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-      }
-      label {
-        font-size: 1.2em;
-        margin-bottom: 5px;
-      }
-      input[type="text"], textarea {
-        font-size: 1.2em;
-        padding: 10px;
-        margin-bottom: 10px;
-        border: none;
-        border-radius: 5px;
-      }
-      input[type="submit"] {
-        font-size: 1.2em;
-        padding: 10px;
-        background-color: #4c5c68;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      input[type="submit"]:hover {
-        background-color: #fff;
-        color: #4c5c68;
-      }
-      .error {
-        color: red;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>After Town Hall</h1>
-    </header>
-    <section>
-      <h2>Calendar</h2>
-      <p>The Catalyst Swarm Calendar</p>
-      <p>Subscribe (to the Calendar)</p>
-    </section>
-    <section>
-      <h2>Slides</h2>
-      <p>Something interesting goes here</p>
-      <div><!-- placeholder for HTML slideshow --></div>
-    </section>
-    <section>
-      <h2>Registration Form</h2>
-      <p>Register your Event or request a breakout room via this form:</p>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" required>
-        <label for="event">Event</label>
-        <textarea id="event" name="event"></textarea>
-        <label for="breakout-room">Breakout Room</label>
-        <textarea id="breakout-room" name="breakout-room"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </section>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Catalyst Swarm</title>
+  <style>
+    body {
+      background-color: #F5F5F5;
+      font-family: "Black Cooper", sans-serif;
+    }
+
+    section {
+      margin: 50px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .calendar {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px #999;
+    }
+
+    .slides {
+      background-color: #eee;
+      padding: 20px;
+      box-shadow: 0 0 5px #999;
+    }
+
+    .form {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px #999;
+    }
+
+    .form label {
+      display: block;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .form input[type="text"], .form input[type="email"], .form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #999;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .form input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .form input[type="submit"]:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .form .error {
+      color: red;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <section class="calendar">
+    <h1>The Catalyst Swarm Calendar</h1>
+    <h2>Subscribe (to the Calendar)</h2>
+    <p>Stay up-to-date with our upcoming events and meetings by subscribing to our calendar.</p>
+    <button>Subscribe Now</button>
+  </section>
+
+  <section class="slides">
+    <h2>After TownHall Slides</h2>
+    <h3>(please, put something interesting)</h3>
+    <p>Here's a placeholder for a HTML slideshow.</p>
+  </section>
+
+ <section class="form">
+    <h2>Register</h2>
+    <h3>Your Event or Request a Breakout Room</h3>
+    <p>Please fill out the form below to register your event or request a breakout room.</p>
+    <form method="post" action="submit-form.php">
+        <div class="form-group">
+            <label for="event-name">Event Name *</label>
+            <input type="text" id="event-name" name="event-name" required>
+        </div>
+        <div class="form-group">
+            <label for="event-description">Event Description *</label>
+            <textarea id="event-description" name="event-description" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="breakout-room">Breakout Room Request</label>
+            <input type="checkbox" id="breakout-room" name="breakout-room">
+        </div>
+        <div class="form-group">
+            <label for="breakout-room-description">Breakout Room Description</label>
+            <textarea id="breakout-room-description" name="breakout-room-description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="contact-name">Contact Name *</label>
+            <input type="text" id="contact-name" name="contact-name" required>
+        </div>
+        <div class="form-group">
+            <label for="contact-email">Contact Email *</label>
+            <input type="email" id="contact-email" name="contact-email" required>
+        </div>
+        <div class="form-group">
+            <label for="contact-phone">Contact Phone</label>
+            <input type="tel" id="contact-phone" name="contact-phone">
+        </div>
+        <div class="form-group">
+            <label for="event-date">Event Date *</label>
+            <input type="date" id="event-date" name="event-date" required>
+        </div>
+        <div class="form-group">
+            <label for="event-time">Event Time *</label>
+            <input type="time" id="event-time" name="event-time" required>
+        </div>
+        <div class="form-group">
+            <label for="event-location">Event Location</label>
+            <input type="text" id="event-location" name="event-location">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</section>
+
+
+</div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</section>
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2023 The Catalyst Swarm. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
 </html>
+  
