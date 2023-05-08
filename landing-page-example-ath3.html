@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>After Town Hall</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: "Black Cooper", sans-serif;
+        color: #333;
+      }
+      header {
+        background-color: #4c5c68;
+        color: #fff;
+        padding: 20px;
+      }
+      section {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 3em;
+        margin: 0 0 10px;
+      }
+      h2 {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0 0 20px;
+      }
+      p {
+        font-size: 1.2em;
+        margin: 0 0 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+      }
+      label {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+      input[type="text"], textarea {
+        font-size: 1.2em;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        font-size: 1.2em;
+        padding: 10px;
+        background-color: #4c5c68;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #fff;
+        color: #4c5c68;
+      }
+      .error {
+        color: red;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>After Town Hall</h1>
+    </header>
+    <section>
+      <h2>Calendar</h2>
+      <p>The Catalyst Swarm Calendar</p>
+      <p>Subscribe (to the Calendar)</p>
+    </section>
+    <section>
+      <h2>Slides</h2>
+      <p>Something interesting goes here</p>
+      <div><!-- placeholder for HTML slideshow --></div>
+    </section>
+    <section>
+      <h2>Registration Form</h2>
+      <p>Register your Event or request a breakout room via this form:</p>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required>
+        <label for="event">Event</label>
+        <textarea id="event" name="event"></textarea>
+        <label for="breakout-room">Breakout Room</label>
+        <textarea id="breakout-room" name="breakout-room"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>
