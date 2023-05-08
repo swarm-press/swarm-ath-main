@@ -1,7 +1,14 @@
 # 🎉 Plan for Catalyst Swarm After TownHall 🎉
 
 ## Context 🌎
-The Catalyst Swarm After TownHall is a weekly event that provides a platform for members of the Cardano community to continue their discussions and connect with each other in breakout rooms. To promote this event, we need to plan an online event announcement that highlights the benefits of attending and encourages participation in this important weekly gathering.
+
+The Catalyst Swarm After TownHall is a weekly event that takes place every Wednesday after the Project Catalyst weekly townhall. This event provides a platform for members of the Cardano community to continue their discussions and connect with each other in breakout rooms.
+
+These breakout rooms are managed to provide a safe space for networking, feedback, ideation, and several other debates. This enables community members to collaborate and brainstorm on various proposals, share their experiences, and receive valuable feedback on their projects.
+
+Overall, the Catalyst Swarm After TownHall is a valuable resource for members of the Cardano and Catalyst communities to engage with one another and continue to move the ecosystem forward.
+
+To promote this event, we need to plan the announcement that highlights the benefits of attending and encourages participation in this important weekly gathering.
 
 ## Workflow 📜
 Here's the workflow we'll follow:
