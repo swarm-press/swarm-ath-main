@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>Catalyst Swarm After Town Hall</title>
@@ -11,354 +10,155 @@
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom right, #DB7093, #6495ED);
     }
-
     #header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: white;
-      padding: 20px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    #header h1 {
-      font-size: 2em;
-      font-weight: bold;
-      color: #333;
-      margin: 0;
-    }
-
-    #header a {
-      color: #333;
-      text-decoration: none;
-      font-size: 1.2em;
-      font-weight: bold;
-      padding: 10px;
-      border-radius: 5px;
-      transition: all 0.2s ease-in-out;
-    }
-
-    #header a:hover {
-      background-color: #333;
-      color: white;
-    }
-
-    #main {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 50px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-    }
-
-    #main .left {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    #main .left h2 {
-      font-size: 2.5em;
-      font-weight: bold;
-      color: white;
-      margin: 0 0 30px;
-    }
-
-    #main .left p {
-      font-size: 1.2em;
-      color: white;
-      margin: 0 0 40px;
-      line-height: 1.5;
-    }
-
-    #main .right {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 50px;
-    }
-
-    #main .right .card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-      padding: 20px;
-    }
-
-    #main .right .card h3 {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #333;
-      margin: 0 0 20px;
-    }
-
-    #main .right .card p {
-      font-size: 1.2em;
-      color: #666;
-      margin: 0 0 10px;
-      line-height: 1.5;
-    }
-
-    #form {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 50px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #form h2 {
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #333;
-      margin: 0 0 30px;
-    }
-
-    #form form {
-      display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background-color: #fff;
-padding: 50px;
-border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-    #form form input[type="text"],
-#form form input[type="email"],
-#form form textarea {
-  width: 100%;
+
+#header h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+#header a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
 }
 
-#form form input[type="submit"] {
-  background-color: #1572e8;
-  color: #fff;
-  font-size: 1.2em;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
+#header a:hover {
+  background-color: #333;
+  color: white;
 }
 
-#events {
-  padding: 100px;
-  text-align: center;
+#main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
-#events h2 {
+#main .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#main .left h2 {
   font-size: 2.5em;
   font-weight: bold;
-  color: #fff;
-  margin: 0 0 50px;
+  color: white;
+  margin: 0 0 30px;
 }
 
-.card {
-  background-color: #fff;
-  padding: 20px;
+#main .left p {
+  font-size: 1.2em;
+  color: white;
+  margin: 0 0 40px;
+  line-height: 1.5;
+}
+
+#main .right {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+#main .right .card {
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card h3 {
+#main .right .card h3 {
   font-size: 1.5em;
   font-weight: bold;
+  color: #333;
   margin: 0 0 20px;
 }
 
-.card p {
+#main .right .card p {
   font-size: 1.2em;
-  color: #555;
-  margin: 0;
+  color: #666;
+  margin: 0 0 10px;
+  line-height: 1.5;
 }
 
-#instructions {
-  background-color: #fff;
-  padding: 100px;
-  text-align: center;
-}
-
-#instructions h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #333;
-  margin: 0 0 50px;
-}
-
-#instructions p {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 50px;
-}
-
-#social {
-  background-color: #f8f8f8;
-  padding: 100px;
-  text-align: center;
-}
-
-#social h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-  color: #333;
-  margin: 0 0 50px;
-}
-
-#social ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#social li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-#social li a {
-  font-size: 1.5em;
-  color: #555;
-  transition: color 0.3s ease-in-out;
-}
-
-#social li a:hover {
-  color: #1572e8;
-}
-}
-
-/* Responsive media queries */
-
-@media screen and (max-width: 767px) {
-#header {
-padding: 20px;
-}
-
-#hero h1 {
-font-size: 3em;
-}
-
-#hero p {
-font-size: 1.5em;
-}
-
-#hero a {
-font-size: 1.5em;
+#form {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #form h2 {
-font-size: 2em;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 30px;
 }
 
 #form form {
-margin: 0;
+  display:flex;
+ #form form label {
+font-size: 1.2em;
+color: #666;
+margin-right: 10px;
 }
 
-#form form label {
-font-size: 1.5em;
+#form form input[type="text"], #form form textarea {
+flex: 1;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+font-size: 1.2em;
+color: #666;
 }
 
-#form form input[type="text"],
-#form form input[type="email"],
 #form form textarea {
-font-size: 1.5em;
-width: 100%;
-margin-bottom: 20px;
+height: 150px;
 }
 
 #form form input[type="submit"] {
-font-size: 1.5em;
-padding: 10px 30px;
+background-color: #4CAF50;
+color: white;
+font-size: 1.2em;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
 }
 
-#events .card {
+#form form input[type="submit"]:hover {
+background-color: #3e8e41;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+#form form {
+flex-direction: column;
+}
+
+#form form label, #form form input[type="text"], #form form textarea {
 width: 100%;
-margin-bottom: 20px;
-}
-
-#social li {
-margin-right: 10px;
 margin-bottom: 10px;
 }
-
-#social li:last-child {
-margin-right: 0;
 }
-
-#social li a {
-font-size: 2em;
-}
-}
-    </style>
-
-  </head>
-  <body>
-    <div id="slides">
-      <!-- Placeholder for slides -->
-    </div>
-    <div id="form">
-  <h2>Sign up for Updates</h2>
-  <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-
-    <button type="submit">Submit</button>
-  </form>
-</div>
-
-<div id="events">
-  <h2>Upcoming Events</h2>
-  <div class="event-card">
-    <img src="https://via.placeholder.com/150" alt="Event Image">
-    <h3>Event Title</h3>
-    <p>Event Description</p>
-  </div>
-  <div class="event-card">
-    <img src="https://via.placeholder.com/150" alt="Event Image">
-    <h3>Event Title</h3>
-    <p>Event Description</p>
-  </div>
-  <div class="event-card">
-    <img src="https://via.placeholder.com/150" alt="Event Image">
-    <h3>Event Title</h3>
-    <p>Event Description</p>
-  </div>
-</div>
-
-<div id="instructions">
-  <h2>Instructions</h2>
-  <ol>
-    <li>Step 1</li>
-    <li>Step 2</li>
-    <li>Step 3</li>
-  </ol>
-</div>
-
-<div id="social">
-  <h2>Follow Us on Social Media</h2>
-  <ul>
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Instagram</a></li>
-    <li><a href="#">LinkedIn</a></li>
-  </ul>
-</div>
-      </body>
-</html>
-
-
