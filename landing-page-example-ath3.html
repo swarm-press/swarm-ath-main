@@ -4,131 +4,163 @@
   <meta charset="UTF-8">
   <title>The Catalyst Swarm</title>
   <style>
+    /* Global styles */
     body {
       background-color: #F5F5F5;
       font-family: "Black Cooper", sans-serif;
-    }
-
-    section {
-      margin: 50px auto;
-      max-width: 800px;
-      padding: 0 20px;
-    }
-
-    h1 {
-      font-size: 3em;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 2em;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    h3 {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1em;
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #fff;
       color: #333;
     }
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid #333;
+}
 
+a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Section styles */
+section {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Button styles */
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Calendar styles */
+.calendar {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px #999;
+}
+
+.calendar h1 {
+  color: #333;
+}
+
+.calendar h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+.calendar p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 75%; /* adjust this value to make the container taller */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+    /* Responsive styles */
+@media screen and (max-width: 767px) {
+  section {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .form input[type="text"], .form input[type="email"], .form textarea {
+    font-size: 0.8em;
+  }
+
+  .form input[type="submit"] {
+    font-size: 0.8em;
+  }
+}
+    
     .calendar {
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 0 5px #999;
-    }
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px #999;
+}
 
     .slides {
-      background-color: #eee;
-      padding: 20px;
-      box-shadow: 0 0 5px #999;
-    }
+  background-color: #eee;
+  padding: 20px;
+  box-shadow: 0 0 5px #999;
+}
 
-    .form {
-      background-color: #fff;
-      padding: 20px;
-      box-shadow: 0 0 5px #999;
-    }
+  <style>    
 
-    .form label {
-      display: block;
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #333;
-      margin-bottom: 10px;
-    }
 
-    .form input[type="text"], .form input[type="email"], .form textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #999;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    .form input[type="submit"] {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-
-    .form input[type="submit"]:hover {
-      background-color: #fff;
-      color: #333;
-    }
-
-    .form .error {
-      color: red;
-      margin-bottom: 20px;
-    }
-    
-    .embed-container {
-      position: relative;
-      padding-bottom: 150%; /* adjust this value to make the container taller */
-      height: 0;
-      overflow: hidden;
-    }
-
-    .embed-container embed {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-  </style>
 
 <body>
+    <section class="hero">
+      <h1>The Catalyst Swarm</h1>
+      <p>A community of changemakers working together to create a better future for all.</p>
+      <button>Join Us</button>
+    </section>
+    
   <section class="calendar">
     <h1>The Catalyst Swarm Calendar</h1>
     <h2>Subscribe to the Calendar</h2>
