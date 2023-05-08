@@ -110,6 +110,23 @@
       color: red;
       margin-bottom: 20px;
     }
+    
+    .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
   </style>
 </head>
 <body>
@@ -128,70 +145,6 @@
   </div>
 </section>
 
- <section class="form">
-    <h2>Register</h2>
-    <h3>Your Event or Request a Breakout Room</h3>
-    <p>Please fill out the form below to register your event or request a breakout room.</p>
-    <form method="post" action="submit-form.php">
-        <div class="form-group">
-            <label for="event-name">Event Name *</label>
-            <input type="text" id="event-name" name="event-name" required>
-        </div>
-        <div class="form-group">
-            <label for="event-description">Event Description *</label>
-            <textarea id="event-description" name="event-description" required></textarea>
-        </div>
-        <div class="form-group">
-            <label for="breakout-room">Breakout Room Request</label>
-            <input type="checkbox" id="breakout-room" name="breakout-room">
-        </div>
-        <div class="form-group">
-            <label for="breakout-room-description">Breakout Room Description</label>
-            <textarea id="breakout-room-description" name="breakout-room-description"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="contact-name">Contact Name *</label>
-            <input type="text" id="contact-name" name="contact-name" required>
-        </div>
-        <div class="form-group">
-            <label for="contact-email">Contact Email *</label>
-            <input type="email" id="contact-email" name="contact-email" required>
-        </div>
-        <div class="form-group">
-            <label for="contact-phone">Contact Phone</label>
-            <input type="tel" id="contact-phone" name="contact-phone">
-        </div>
-        <div class="form-group">
-            <label for="event-date">Event Date *</label>
-            <input type="date" id="event-date" name="event-date" required>
-        </div>
-        <div class="form-group">
-            <label for="event-time">Event Time *</label>
-            <input type="time" id="event-time" name="event-time" required>
-        </div>
-        <div class="form-group">
-            <label for="event-location">Event Location</label>
-            <input type="text" id="event-location" name="event-location">
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
-</section>
-
-
-</div>
-        <div class="form-group">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
-</section>
-<!-- Footer Section -->
-<footer>
-    <div class="container">
-        <p>&copy; 2023 The Catalyst Swarm. All Rights Reserved.</p>
-    </div>
-</footer>
 </body>
 </html>
   
