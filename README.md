@@ -1,52 +1,25 @@
 🎉 Plan for Catalyst Swarm After TownHall 🎉
 
-**Context 🌎**
-The Catalyst Swarm After TownHall is coming up, and we need to plan an online event announcement to promote the community events and breakout rooms.
+## Context 🌎
+The Catalyst Swarm After TownHall is a weekly event that provides a platform for members of the Cardano community to continue their discussions and connect with each other in breakout rooms. To promote this event, we need to plan an online event announcement that highlights the benefits of attending and encourages participation in this important weekly gathering.
 
-**Workflow 📜**
+## Workflow 📜
 Here's the workflow we'll follow:
 1. 📝 Create/Update Registration Forms: Create/update registration forms for breakout rooms and community events.
-2. 🖼️ Generate Slides: Generate slides for the announcement based on the registration forms.
+2. 🖼️ Generate Slides: Generate slides in HTML, CSS, and JS for the announcement based on the registration forms, which will be open source and available for everyone to use.
 3. 📅 Create/Update Google Calendar: Create/update a Google Calendar with all community events.
-4. 🌐 Set Up Swarm-press Page: Set up the Swarm-press page inside catalystswarm.com website.
+4. 🌐 Set Up Landing Page: Set up the After TownHall page inside the catalystswarm.com website, which will include the generated slides.
 5. 📣 Make Announcement: Make the announcement in two parts: first, promote the community events, then promote the breakout rooms.
 
-**Tasks 📝**
-- Create/Update registration forms for breakout rooms and community events.
-- Generate/Update slides for the announcement based on the registration forms.
-- Create/Update a Google Calendar with all community events.
-- Set up the Swarm-press page inside catalystswarm.com website.
-- Make the announcement in two parts.
+## Tasks 📝
 
-**Task Details 📄**
-**Create/Update Registration Forms 📝**
-We need to create/update two registration forms for the event: one for breakout rooms and one for community events (or one for both). The forms should collect the following information:
-- Name 🤩
-- Email address 📧
-- Breakout Room Title 🏢
-- Breakout Room short description 🗣️
-The forms should also be embedded on the catalystswarm.com website.
+- [x] [Create/Update registration forms for breakout rooms and community events](https://github.com/swarm-press/swarm-ath-main/issues/2#issue-1699284258) - @cauechianca 
+- [x] [Generate/Update slides for the announcement based on the registration forms.](https://github.com/swarm-press/swarm-ath-main/issues/3) - @cauechianca 
+- [ ] [Create/Update a Google Calendar with all community events.](https://github.com/swarm-press/swarm-ath-main/issues/4)
+- [ ] [Set up the After TownHall page inside catalystswarm.com website.](https://github.com/swarm-press/swarm-ath-main/issues/5) - @cauechianca 
+- [ ] [Make the announcement in two parts.](https://github.com/swarm-press/swarm-ath-main/issues/6) - Peter
 
-**Generate Slides 🖼️**
-We'll use the information collected from the registration forms to create slides for the event announcement. The slides should include:
-- Date and time of each community event 🗓️ (invite community to visit website for more info)
-- QR code to access the registration forms 📱
-- Brief description of each event or room 📝
+## Deadline ⏰
 
-**Create/Update Google Calendar 📅**
-We need to create/update a Google Calendar that includes all the community events subscribed to the form. The calendar should be embedded on the catalystswarm.com website.
-
-**Set Up Swarm-press Page 🌐**
-We need to set up a Swarm-press page on the catalystswarm.com website to promote the event. The page should include:
-- Information about the Catalyst Swarm After TownHall ℹ️
-- Links to the registration forms 🔗
-- Links to the Google Calendar 📅
-- The slides (or art) for the event announcement 🎨
-
-**Make Announcement 📣**
-We'll make the announcement in two parts:
-- First, we'll promote the community events. We'll share the link to the Swarm-press page and encourage people to visit the website, scan the QR code, and subscribe to the Google Calendar.
-- Second, we'll promote the breakout rooms. We'll share the link to the Swarm-press page and encourage people to visit the website, scan the QR code, and sign up for the breakout rooms they're interested in.
-
-**Deadline ⏰**
 We need to complete this work by May 9th.
+
