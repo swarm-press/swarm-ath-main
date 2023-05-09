@@ -26,6 +26,12 @@ Here's the workflow we'll follow:
 - [x] [Set up the After TownHall page inside catalystswarm.com website.](https://github.com/swarm-press/swarm-ath-main/issues/5)
 - [ ] [Make the announcements.](https://github.com/swarm-press/swarm-ath-main/issues/6)
 
+🔗 **Useful Links:**
+- [Swarm Press GitHub](https://github.com/swarm-press)
+- [After Town Hall (ATH) Management Board](https://github.com/orgs/swarm-press/projects/2/views/1)
+- [After Town Hall (ATH) Roadmap](https://github.com/orgs/swarm-press/projects/2/views/2)
+- [Catalyst Swarm Github](https://github.com/Catalyst-Swarm)
+
 ## Deadline ⏰
 
 We need to complete this work by May 9th.
