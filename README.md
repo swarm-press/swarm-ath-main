@@ -1,48 +1,76 @@
-# Catalyst Swarm - After Town Hall
+<h1 align="center">
+🐝 Welcome to Swarm After Town Hall 🐝
+</h1>
 
-👋 Welcome to the Catalyst Swarm - After Town Hall repository!
+<p align="center">
+  <a href="https://www.youtube.com/@catalystswarm"><img src="https://img.shields.io/badge/Youtube-%23FF0000.svg?style=for-the-badge&logo=Youtube&logoColor=white"></a>
+  <a href="https://twitter.com/CatalystSwarm"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white"></a>
+  <a href="https://tiktok.com/swarmproject"><img src="https://img.shields.io/badge/Tiktok-%23000000.svg?style=for-the-badge&logo=Tiktok&logoColor=white"></a>
+</p>
 
-The weekly Catalyst Swarm After Town Halls is a place for the community to present projects, invite the community into meaningful discussions, and find like-minded people to collaborate and build projects together. 
+<p align="center">
+  <a href="https://catalystswarm.com"><strong>catalystswarm.com</strong></a> |
+  <a href="https://gitlab.com/swarmlab2"><strong>GitLab</strong></a> |
+  <a href="https://github.com/Catalyst-Swarm"><strong>GitHub</strong></a> |
+  <a href="https://app.gitbook.com/s/WRaJlGTSIjkHNdNBhpUN/"><strong>GitBook</strong></a> |
+  <a href="https://app.dework.xyz/i/4LYcjNTXa3Uqj55c98RSEL"><strong>Dework</strong></a> |
+  <a href="https://discord.gg/yFdYJxPbGV"><strong>Discord</strong></a>
+</p>
 
-After the official Town Hall, hosted by Daniel Ribar (IOG Community Manager) and Kriss Baird (IOG Product Owner), the Catalyst Swarm and the Community open up the After Town Hall. Each week we have several parallel running breakout rooms in Zoom to invite the community to participate in Presentations, Q&As, Discussions and conversations. Our goal is to maintain spaces where the community can present, meet and connect with each other.
+
+<h2 align="center">
+Welcome to the Catalyst Swarm After Town Hall repository! <p/>
+This is the place to find information about our weekly events, as well as resources to help you participate and host your own breakout room.
+</h2>
+
+## Table of Contents
+
+- [What is Swarm After Town Hall?](#what-is-swarm-after-town-hall)
+- [How to Participate](#how-to-participate)
+- [Swarm After TownHall Guidelines](#swarm-after-townhall-guidelines)
+- [Want to support us?](#want-to-support-us)
+
+
+<p align="Left">
+  SWARM After Town Hall <p/>
+  Time: Every Wednesday around 18:00 UTC <p/>
+  Live on Zoom (After the Project Catalyst TownHall) <p/>
+  Registration: https://bit.ly/3rCicSR <p/>
+<p/>
+
+## What is Swarm After Town Hall?
+
+After the official Town Hall, hosted by Daniel Ribar (IOG Community Manager) and Kriss Baird (IOG Product Owner), the Catalyst Swarm and the community open up the After Town Hall. Each week we have several parallel breakout rooms on Zoom to invite the community to participate in presentations, Q&As, discussions, and conversations. Our goal is to maintain spaces where the community can present, meet, and connect with each other. 
+
+These events support Project Catalyst's goal to provide a safe and lively environment to explore the highest potential of human collaboration, as well as to onboard, introduce, and educate community members to our ecosystem. 🌿
 
 ## How to Participate
 
-Everyone is welcomed to take initiative and host a room. To sign up to host a room, please fill out the [Breakout Room Submission Form](https://forms.gle/rQrrZSCVEyekF8sG9).
+### Participating in the Swarm After Town Hall
+Are you interested in participating in the weekly Catalyst Swarm After Town Hall? Here's how you can get involved:
 
-To attend the After Town Hall, simply join the Zoom call at the designated time. You can find the link to the Zoom call in the [Project Catalyst Announcement Telegram](https://t.me/cardanocatalyst) a few hours before the event.
+- **Hosting a Break Out Room:** If you would like to host a breakout room during the After Town Hall, or have your event listed on the Swarm Calendar, simply fill out the form using the link below:
+  
+  https://forms.gle/rQrrZSCVEyekF8sG9
+  
+- **Registering for the Project Catalyst Weekly Town Hall:** To participate in the After Town Hall, you will need to first register for the Project Catalyst Weekly Town Hall. You can do this by following the registration link below:
 
-## Host Guidelines
+  https://bit.ly/3rCicSR
 
-We have some simple Guidelines to ensure to create and keep After Town Halls inclusive and diverse community events!
+We hope to see you at the After Town Hall soon!
 
-- Sign up in the [Breakout Room Submission Form](https://forms.gle/rQrrZSCVEyekF8sG9). Your Room and room title/topic will be announced at the end of the Town Hall to the community.
-- Check for Daniel Ribar’s announcement in the [Project Catalyst Announcement Telegram](https://t.me/cardanocatalyst) a couple hours before the Town Hall for confirmation of your Breakout Room.
-- Be punctual in the Town Hall 18.00 UTC. To be able to record your room, we will assign you as Co-Host before the rooms open.
-- Record your Break Out Room! Upload your recordings to this [folder](https://drive.google.com/drive/folders/1-FHuAwwG1znyapQyOzqO0y-1RfwoT8V_?usp=sharing). Please upload to the folder within 5 days post ATH recording. Please feel free to upload recordings to your own channel, but as Catalyst Swarm we upload recordings to our Catalyst Swarm Youtube Account to allow everyone to catch up on great discussions, sessions, and workshops. THEN please send an email with a title and description for your recording to coreswarm@gmail.com, Thank You! ✌
-- Important :: As co-host, you are able to close your room when your session is done, but you also able to close all breakout rooms. Do not “Close All Rooms” when exiting the Zoom call. Please check when leaving to only close your room as we don’t want to disrupt the conversation going on in parallel in the other breakout rooms.
-- Embody Respect with your audience, make sure to read the [Community Moderation Guidelines](https://github.com/Catalyst-Swarm/Swarm-Wiki/wiki/Community-Moderation-Guidelines) beforehand!
-- Act if needed. As After Town Hall Co - host its up to you to maintain a proper communication in your room. If you identify misbehaving participants which do not respect the above mentioned  Community Moderation Guidelines, and which disturb the communication, please take use of your “kick participants” right as a co-host.
+## Swarm After TownHall Guidelines
+We take our community seriously and want to make sure everyone feels welcome and respected in our events.
+Please review our Guidelines and instructions before hosting/attending any of our events.
 
-## Resources
+### Want to support us?
+Donate to our project fund:
 
-- [Catalyst Community Moderation Guidelines](https://iohk.zendesk.com/hc/en-us/articles/900005813763-Catalyst-Community-Moderation-Guidelines)
-- [Project Catalyst Website](https://cardano.ideascale.com/)
-- [Project Catalyst GitHub](https://github.com/input-output-hk/cardano-ideas)
-- [Catalyst Swarm YouTube Channel](https://www.youtube.com/channel/UCIwJcVjg8cMj1Aw7A7Cbx2w)
-- [Catalyst Swarm Telegram Chat](https://t.me/CatalystSwarm)
+addr1qyn5dwmcevsp6qgm6ea8a63tmktusyt6a4ezspl6j8wlsyf58gh4c3495qjyshkan696vhdjcpx4ewn3gtzf4d832a9s0m3dgd
 
-## Contact Us
+or delegate to [SWARM] stakepool. 🙏
 
-Have questions or feedback about the Catalyst Swarm After Town Hall events? Want to get involved with the Catalyst Swarm team? Contact us through one of the channels below:
 
-- Email: coreswarm@gmail.com
-- Telegram: https://t.me/CatalystSwarm
-- Twitter: https://twitter.com/CatalystSwarm
-- GitHub: https://github.com/CatalystSwarm
 
-## Contribute
 
-Interested in contributing to the Catalyst Swarm After Town Hall events or the Catalyst Swarm project in general? Check out our [GitHub repository](https://github.com/CatalystSwarm) to see our open issues and pull requests, or contact us through one of the channels above to discuss potential contributions. 
 
-We welcome all community members to join us in building a thriving and collaborative ecosystem! 🚀🌟👨‍🚀👩‍🚀💻💬
