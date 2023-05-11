@@ -61,7 +61,7 @@ We hope to see you at the After Town Hall soon!
 
 ## Swarm After TownHall Hosts Guidelines
 We take our community seriously and want to make sure everyone feels welcome and respected in our events.
-Please review our Guidelines and instructions before hosting/attending any of our events.
+Please review our [Guidelines and instructions](https://github.com/swarm-press/swarm-ath-main/blob/main/swarm-ath-hosts-guidelines.md) before hosting/attending any of our events.
 
 ### Want to support us?
 Donate to our project fund:
@@ -69,8 +69,3 @@ Donate to our project fund:
 addr1qyn5dwmcevsp6qgm6ea8a63tmktusyt6a4ezspl6j8wlsyf58gh4c3495qjyshkan696vhdjcpx4ewn3gtzf4d832a9s0m3dgd
 
 or delegate to [SWARM] stakepool. 🙏
-
-
-
-
-
