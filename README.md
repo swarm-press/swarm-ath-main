@@ -27,7 +27,7 @@ This is the place to find information about our weekly events, as well as resour
 
 - [What is Swarm After Town Hall?](#what-is-swarm-after-town-hall)
 - [How to Participate](#how-to-participate)
-- [Swarm After TownHall Guidelines](#swarm-after-townhall-guidelines)
+- [Swarm After TownHall Hosts Guidelines](#swarm-after-townhall-hosts-guidelines)
 - [Want to support us?](#want-to-support-us)
 
 
@@ -49,13 +49,11 @@ These events support Project Catalyst's goal to provide a safe and lively enviro
 ### Participating in the Swarm After Town Hall
 Are you interested in participating in the weekly Catalyst Swarm After Town Hall? Here's how you can get involved:
 
-- **Hosting a Break Out Room:** If you would like to host a breakout room during the After Town Hall, or have your event listed on the Swarm Calendar, simply fill out the form using the link below:
+- **Hosting a Break Out Room:** If you would like to host a breakout room during the After Town Hall, or have your event listed on the Swarm Calendar, simply fill out the form using [this link](https://forms.gle/rQrrZSCVEyekF8sG9).
+    
+- **Registering for the Project Catalyst Weekly Town Hall:** To participate in the After Town Hall, you will need to first register for the Project Catalyst Weekly Town Hall via [this link](https://bit.ly/3rCicSR).
   
-  https://forms.gle/rQrrZSCVEyekF8sG9
-  
-- **Registering for the Project Catalyst Weekly Town Hall:** To participate in the After Town Hall, you will need to first register for the Project Catalyst Weekly Town Hall. You can do this by following the registration link below:
-
-  https://bit.ly/3rCicSR
+- **Contributing to event planning and execution**: Anyone can go to the [Swarm After TownHall Planning file](https://github.com/swarm-press/swarm-ath-main/blob/main/ath-planning.md) on GitHub and contribute to improving event planning and execution.
 
 We hope to see you at the After Town Hall soon!
 
@@ -63,9 +61,10 @@ We hope to see you at the After Town Hall soon!
 We take our community seriously and want to make sure everyone feels welcome and respected in our events.
 Please review our [Guidelines and instructions](https://github.com/swarm-press/swarm-ath-main/blob/main/swarm-ath-hosts-guidelines.md) before hosting/attending any of our events.
 
-### Want to support us?
+#### Want to support us?
+
 Donate to our project fund:
 
-addr1qyn5dwmcevsp6qgm6ea8a63tmktusyt6a4ezspl6j8wlsyf58gh4c3495qjyshkan696vhdjcpx4ewn3gtzf4d832a9s0m3dgd
+`addr1qyn5dwmcevsp6qgm6ea8a63tmktusyt6a4ezspl6j8wlsyf58gh4c3495qjyshkan696vhdjcpx4ewn3gtzf4d832a9s0m3dgd`
 
-or delegate to [SWARM] stakepool. 🙏
+or delegate to [[SWARM]](https://pool.pm/e40edb5a243c9ef00296860c6b7c8272fd5923ac52b5050d68e80d9b) stakepool. 🙏
