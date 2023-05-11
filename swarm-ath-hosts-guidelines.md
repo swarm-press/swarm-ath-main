@@ -24,9 +24,10 @@ We have some simple Guidelines to ensure to create and keep After Town Halls inc
 - Act if needed. As After Town Hall Co - host its up to you to maintain a proper communication in your room. If you identify misbehaving participants which do not respect the above mentioned  Community Moderation Guidelines, and which disturb the communication, please take use of your “kick participants” right as a coshost.
 
 
-### Want to support us?
+#### Want to support us?
+
 Donate to our project fund:
 
-addr1qyn5dwmcevsp6qgm6ea8a63tmktusyt6a4ezspl6j8wlsyf58gh4c3495qjyshkan696vhdjcpx4ewn3gtzf4d832a9s0m3dgd
+`addr1qyn5dwmcevsp6qgm6ea8a63tmktusyt6a4ezspl6j8wlsyf58gh4c3495qjyshkan696vhdjcpx4ewn3gtzf4d832a9s0m3dgd`
 
-or delegate to [SWARM] stakepool. 🙏
+or delegate to [[SWARM]](https://pool.pm/e40edb5a243c9ef00296860c6b7c8272fd5923ac52b5050d68e80d9b) stakepool. 🙏
