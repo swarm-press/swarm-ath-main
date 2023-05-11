@@ -35,7 +35,7 @@ This is the place to find information about our weekly events, as well as resour
   SWARM After Town Hall <p/>
   Time: Every Wednesday around 18:00 UTC <p/>
   Live on Zoom (After the Project Catalyst TownHall) <p/>
-  Registration: https://bit.ly/3rCicSR <p/>
+  <a href="https://bit.ly/3rCicSR"><strong>Register Here</strong></a>
 <p/>
 
 ## What is Swarm After Town Hall?
