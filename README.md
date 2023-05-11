@@ -30,7 +30,7 @@ This is the place to find information about our weekly events, as well as resour
 - [Swarm After TownHall Hosts Guidelines](#swarm-after-townhall-hosts-guidelines)
 - [Want to support us?](#want-to-support-us)
 
-
+## Swarm ATH Event Info:
 <p align="Left">
   SWARM After Town Hall <p/>
   Time: Every Wednesday around 18:00 UTC <p/>
