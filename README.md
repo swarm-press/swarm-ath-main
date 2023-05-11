@@ -59,7 +59,7 @@ Are you interested in participating in the weekly Catalyst Swarm After Town Hall
 
 We hope to see you at the After Town Hall soon!
 
-## Swarm After TownHall Guidelines
+## Swarm After TownHall Hosts Guidelines
 We take our community seriously and want to make sure everyone feels welcome and respected in our events.
 Please review our Guidelines and instructions before hosting/attending any of our events.
 
