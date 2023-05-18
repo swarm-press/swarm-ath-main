@@ -1,4 +1,7 @@
-Step-by-step plan to resolve the task "Design the layout and structure for each slide according to the provided specifications" using Front-end Frameworks:
+## Step-by-step plan to resolve the task "Design the layout and structure for each slide according to the provided specifications" see using Front-end Frameworks :
+
+ [this issue](https://github.com/swarm-press/swarm-ath-main/issues/8)
+ 
 
 1. Research and select a suitable front-end framework for creating the slide deck, such as React, Vue.js, or Angular.
 
