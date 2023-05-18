@@ -3,6 +3,8 @@
 **Objective:**
 Create slides in HTML/CSS or other open-source languages that can retrieve information from an Excel spreadsheet automatically. A step-by-step tutorial is required to guide the process of populating the slides with information from the spreadsheet.
 
+**Issue:**
+[Create final slides deck for the ATH](https://github.com/swarm-press/swarm-ath-main/issues/8)
 **Suggested Tasks:**
 
 - [ ] Research and select the appropriate open-source languages and tools for creating slides in HTML/CSS or other languages that can retrieve information from an Excel spreadsheet automatically.
