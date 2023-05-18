@@ -53,7 +53,7 @@ Are you interested in participating in the weekly Catalyst Swarm After Town Hall
     
 - **Registering for the Project Catalyst Weekly Town Hall:** To participate in the After Town Hall, you will need to first register for the Project Catalyst Weekly Town Hall via [this link](https://bit.ly/3rCicSR).
   
-- **Contributing to event planning and execution**: Anyone can go to the [Swarm After TownHall Project]([https://github.com/swarm-press/swarm-ath-main/blob/main/ath-planning.md](https://github.com/orgs/swarm-press/projects/2)) on GitHub and contribute to improving event planning and execution.
+- **Contributing to event planning and execution**: Anyone can go to the [Swarm After TownHall Project](https://github.com/orgs/swarm-press/projects/2) on GitHub and contribute to improving event planning and execution.
 
 We hope to see you at the After Town Hall soon!
 
