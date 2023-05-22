@@ -14,11 +14,21 @@
       background: linear-gradient(to bottom, #2BABDE, white);
     }
 
-    .slide-logo {
+    .slide-background {
       position: absolute;
-      top: calc(50% - (33vh / 2)); /* Adjust the positioning as needed */
-      left: calc(50% - (logo-width / 2)); /* Adjust the positioning as needed */
-      opacity: 0.65;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(path/to/background-image.jpg);
+      background-size: cover;
+      opacity: 0.2;
+      pointer-events: none;
+    }
+
+    .slide-content {
+      position: relative;
+      z-index: 1;
     }
 
     .slide h1 {
@@ -30,6 +40,57 @@
     .slide h2 {
       font-family: 'Lobster', cursive;
       font-size: 24px;
+    }
+
+    .townhall-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+    }
+
+    .townhall-item {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+
+    .townhall-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 15%, transparent 16%);
+      background-size: 10px 10px;
+      pointer-events: none;
+    }
+
+    .townhall-item-name {
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      color: white;
+      font-family: 'Cooper Black', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .townhall-item-date {
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      width: 100%;
+      color: white;
+      font-family: 'Cooper Black', sans-serif;
+      font-size: 16px;
+      text-align: center;
     }
 
     .navigation {
@@ -51,41 +112,62 @@
   </style>
 </head>
 <body>
-  <div class="slide" id="slide-1">
-    <div class="slide-background"></div>
-    <div class="slide-content">
-      <img src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" class="slide-logo">
-      <h1>CATALYST SWARM</h1>
-      <h2>AFTER TOWN HALL</h2>
-    </div>
-  </div>
-
   <div class="slide" id="slide-2">
     <div class="slide-background"></div>
     <div class="slide-content">
       <h1>Join the Town Halls</h1>
       <h2><a href="https://catalystswarm.com/building-communities/">https://catalystswarm.com/building-communities/</a></h2>
-      <ul>
-        <li>Pacific Townhall (With placeholder for time and date)</li>
-        <li>LATAM Townhall (With placeholder for time and date)</li>
-        <li>Townhall Brasil (With placeholder for time and date)</li>
-        <li>Europe Townhall (With placeholder for time and date)</li>
-        <li>South Asia Townhall (With placeholder for time and date)</li>
-        <li>Eastern Townhall (With placeholder for time and date)</li>
-        <li>MENA Townhall (With placeholder for time and date)</li>
-        <li>Africa Townhall (With placeholder for time and date)</li>
-        <li>Eastern Townhall (With placeholder for time and date)</li>
-        <li>MENA Townhall (With placeholder for time and date)</li>
-        <li>Africa Townhall (With placeholder for time and date)</li>
+      <ul class="townhall-list">
+        <li class="townhall-item">
+          <span class="townhall-item-name">Pacific Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">LATAM Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">Townhall Brasil</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">Europe Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">South Asia Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">Eastern Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">MENA Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">Africa Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">Eastern Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">MENA Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
+        <li class="townhall-item">
+          <span class="townhall-item-name">Africa Townhall</span>
+          <span class="townhall-item-date">Time and Date</span>
+        </li>
       </ul>
     </div>
-  </div>
-
-  <!-- Add more slides here -->
-
-  <div class="navigation">
-    <div class="navigation-button" id="previous-button">Previous</div>
-    <div class="navigation-button" id="next-button">Next</div>
+    <div class="navigation">
+      <div id="previous-button" class="navigation-button">Previous</div>
+      <div id="next-button" class="navigation-button">Next</div>
+    </div>
   </div>
 
   <script>
