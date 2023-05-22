@@ -3,91 +3,74 @@
 <head>
   <title>Slide Deck</title>
   <style>
-    /* Define CSS classes and IDs for slide components */
     .slide {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
       background: linear-gradient(to bottom, #2BABDE, white);
     }
-
-    .slide-logo {
-      position: absolute;
-      top: calc(50% - (33vh / 2)); /* Adjust the positioning as needed */
-      left: calc(50% - (logo-width / 2)); /* Adjust the positioning as needed */
-      opacity: 0.65;
-    }
-
+  
     .slide h1 {
       font-family: corben, sans-serif;
       font-size: 48px;
       margin-bottom: 10px;
     }
-
+  
     .slide h2 {
       font-family: 'Lobster', cursive;
       font-size: 24px;
     }
-
-    .map-image {
-      position: relative;
-      width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .location-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 40px;
-      height: 40px;
-      background-image: url(path/to/location-icon.png);
-      background-size: cover;
-    }
-
-    .arrow-container {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-family: 'Corben', sans-serif;
-    }
-
-    .arrow {
-      width: 60px;
-      height: 60px;
-      background-image: url(path/to/arrow-icon.png);
-      background-size: cover;
-      margin-bottom: 10px;
-    }
-
-    .time-date-placeholder {
-      font-size: 18px;
-    }
-
-    /* Additional CSS for Slide 2 */
+  
     .slide-2 {
       background-color: gray;
       background-image: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.1) 30%);
       background-size: 10px 10px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
     }
-
-    .townhall-info {
+  
+    .slide-2 h1 {
       color: white;
-      font-size: 20px;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  
+    .slide-2 h2 {
+      color: white;
+      font-size: 18px;
+    }
+  
+    .townhall-icons {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .townhall-icon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url(path/to/townhall-icon.png);
+      background-size: cover;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+  
+    .townhall-icon:hover {
+      transform: scale(1.2);
+    }
+  
+    .townhall-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px;
+      color: white;
+      text-align: center;
     }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
@@ -101,45 +84,59 @@
 
   <div class="slide slide-2">
 
-      <h1>Join the Town Halls</h1>
-      <h2>https://catalystswarm.com/building-communities/</h2>
-      <svg class="townhall-icons">
-        <!-- Placeholder for Pacific Townhall -->
-        <circle cx="100" cy="200" r="10" fill="red" />
-        <text x="120" y="205" font-size="12" fill="black">Pacific Townhall
-        </text>
-
-        <!-- Placeholder for LATAM Townhall -->
-        <circle cx="200" cy="250" r="10" fill="green" />
-        <text x="220" y="255" font-size="12" fill="black">LATAM Townhall</text>
-
-        <!-- Placeholder for Townhall Brasil -->
-        <circle cx="300" cy="150" r="10" fill="blue" />
-        <text x="320" y="155" font-size="12" fill="black">Townhall Brasil</text>
-
-        <!-- Placeholder for Europe Townhall -->
-        <circle cx="400" cy="300" r="10" fill="orange" />
-        <text x="420" y="305" font-size="12" fill="black">Europe Townhall</text>
-
-        <!-- Placeholder for South Asia Townhall -->
-        <circle cx="500" cy="100" r="10" fill="purple" />
-        <text x="520" y="105" font-size="12" fill="black">South Asia Townhall</text>
-
-        <!-- Placeholder for Eastern Townhall -->
-        <circle cx="600" cy="350" r="10" fill="yellow" />
-        <text x="620" y="355" font-size="12" fill="black">Eastern Townhall</text>
-
-        <!-- Placeholder for MENA Townhall -->
-        <circle cx="700" cy="200" r="10" fill="cyan" />
-        <text x="720" y="205" font-size="12" fill="black">MENA Townhall</text>
-
-        <!-- Placeholder for Africa Townhall -->
-        <circle cx="800" cy="250" r="10" fill="pink" />
-        <text x="820" y="255" font-size="12" fill="black">Africa Townhall</text>
-      </svg>
-    </div>
-    
-
+    <h1>Join the Town Halls</h1>
+    <h2>https://catalystswarm.com/building-communities/</h2>
+    <svg class="townhall-icons" xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+      <!-- Placeholder for Pacific Townhall -->
+      <g>
+        <circle cx="100" cy="200" r="10" fill="red" class="townhall-icon" />
+        <text x="100" y="240" font-size="12" fill="white" class="townhall-name">Pacific Townhall</text>
+      </g>
+  
+      <!-- Placeholder for LATAM Townhall -->
+      <g>
+        <circle cx="200" cy="250" r="10" fill="green" class="townhall-icon" />
+        <text x="200" y="290" font-size="12" fill="white" class="townhall-name">LATAM Townhall</text>
+      </g>
+  
+      <!-- Placeholder for Townhall Brasil -->
+      <g>
+        <circle cx="300" cy="150" r="10" fill="blue" class="townhall-icon" />
+        <text x="300" y="190" font-size="12" fill="white" class="townhall-name">Townhall Brasil</text>
+      </g>
+  
+      <!-- Placeholder for Europe Townhall -->
+      <g>
+        <circle cx="400" cy="300" r="10" fill="orange" class="townhall-icon" />
+        <text x="400" y="340" font-size="12" fill="white" class="townhall-name">Europe Townhall</text>
+      </g>
+  
+      <!-- Placeholder for South Asia Townhall -->
+      <g>
+        <circle cx="500" cy="100" r="10" fill="purple" class="townhall-icon" />
+        <text x="500" y="140" font-size="12" fill="white" class="townhall-name">South Asia Townhall</text>
+      </g>
+  
+      <!-- Placeholder for Eastern Townhall -->
+      <g>
+        <circle cx="600" cy="350" r="10" fill="yellow" class="townhall-icon" />
+        <text x="600" y="390" font-size="12" fill="white" class="townhall-name">Eastern Townhall</text>
+      </g>
+  
+      <!-- Placeholder for MENA Townhall -->
+      <g>
+        <circle cx="700" cy="200" r="10" fill="cyan" class="townhall-icon" />
+        <text x="700" y="240" font-size="12" fill="white" class="townhall-name">MENA Townhall</text>
+      </g>
+  
+      <!-- Placeholder for Africa Townhall -->
+      <g>
+        <circle cx="800" cy="250" r="10" fill="pink" class="townhall-icon" />
+        <text x="800" y="290" font-size="12" fill="white" class="townhall-name">Africa Townhall</text>
+      </g>
+    </svg>
+  </div>
+  
   <div class="slide">
     <h1>Slide 3</h1>
     <p>This is the content of slide 3.</p>
@@ -181,4 +178,4 @@
 
 </body>
 </html>
-      
+
