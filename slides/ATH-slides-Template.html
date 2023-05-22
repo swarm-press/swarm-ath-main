@@ -3,73 +3,49 @@
 <head>
   <title>Slide Deck</title>
   <style>
-    /* Define CSS classes and IDs for slide components */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      overflow: hidden;
-    }
-
     .slide {
-      position: relative;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
       height: 100vh;
+      display: none;
+    }
+
+    .slide-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.1) 30%);
+      background-size: 10px 10px;
+      pointer-events: none;
+    }
+
+    .slide-content {
+      position: relative;
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(to bottom, #2BABDE, white);
-    }
-
-    .slide-logo {
-      position: absolute;
-      top: calc(50% - (33vh / 2)); /* Adjust the positioning as needed */
-      left: calc(50% - (logo-width / 2)); /* Adjust the positioning as needed */
-      opacity: 0.65;
+      color: black;
+      z-index: 1;
     }
 
     .slide h1 {
-      font-family: 'Cooper Black', sans-serif;
       font-size: 48px;
       margin-bottom: 10px;
-      color: black;
     }
 
     .slide h2 {
-      font-family: 'Lobster', cursive;
       font-size: 24px;
-      color: black;
     }
 
     .slide-2 {
-      background-color: transparent;
-      height: 100vh;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .slide-2 h1 {
-      color: black;
-      font-size: 36px;
-      margin-bottom: 20px;
-      margin-left: 20px;
-      margin-top: 20px;
-      text-align: left;
-    }
-
-    .slide-2 h2 {
-      color: black;
-      font-size: 18px;
-      margin-left: 20px;
-      text-align: left;
+      background-color: gray;
     }
 
     .townhall-icons {
@@ -103,115 +79,146 @@
       text-align: center;
     }
 
-    .slide::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-image: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.1) 30%);
-      background-size: 10px 10px;
-      pointer-events: none;
+    .navigation {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .navigation-button {
+      margin: 0 10px;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
     }
   </style>
-  <link href="https://fonts.googleapis.com/css?family=Cooper+Black|Lobster" rel="stylesheet">
 </head>
 <body>
-  <div class="slide">
-    <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" width="logo-width" height="33vh" />
-    <h1>CATALYST SWARM</h1>
-    <h2>AFTER TOWN HALL</h2>
+  <div class="slide" id="slide-1">
+    <div class="slide-background"></div>
+    <div class="slide-content">
+      <h1>CATALYST SWARM</h1>
+      <h2>AFTER TOWN HALL</h2>
+    </div>
   </div>
 
-  <div class="slide slide-2">
-    <h1>Join the Town Halls</h1>
-    <h2>https://catalystswarm.com/building-communities/</h2>
-    <svg class="townhall-icons" xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
-      <!-- Placeholder for Pacific Townhall -->
-      <g>
-        <circle cx="100" cy="200" r="10" fill="red" class="townhall-icon" />
-        <text x="100" y="240" font-size="12" fill="white" class="townhall-name">Pacific Townhall</text>
-      </g>
+  <div class="slide slide-2" id="slide-2">
+    <div class="slide-background"></div>
+    <div class="slide-content">
+      <h1>Join the Town Halls</h1>
+      <h2>https://catalystswarm.com/building-communities/</h2>
+      <svg class="townhall-icons" xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+        <!-- Placeholder for Pacific Townhall -->
+        <g>
+          <circle cx="100" cy="200" r="10" fill="red" class="townhall-icon" />
+          <text x="100" y="240" font-size="20" fill="black" class="townhall-name">Pacific Townhall</text>
+          <text x="100" y="260" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
 
-      <!-- Placeholder for LATAM Townhall -->
-      <g>
-        <circle cx="200" cy="250" r="10" fill="green" class="townhall-icon" />
-        <text x="200" y="290" font-size="12" fill="white" class="townhall-name">LATAM Townhall</text>
-      </g>
+        <!-- Placeholder for LATAM Townhall -->
+        <g>
+          <circle cx="200" cy="250" r="10" fill="green" class="townhall-icon" />
+          <text x="200" y="290" font-size="20" fill="black" class="townhall-name">LATAM Townhall</text>
+          <text x="200" y="310" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
 
-      <!-- Placeholder for Townhall Brasil -->
-      <g>
-        <circle cx="300" cy="150" r="10" fill="blue" class="townhall-icon" />
-        <text x="300" y="190" font-size="12" fill="white" class="townhall-name">Townhall Brasil</text>
-      </g>
+        <!-- Placeholder for Townhall Brasil -->
+        <g>
+          <circle cx="300" cy="150" r="10" fill="blue" class="townhall-icon" />
+          <text x="300" y="190" font-size="20" fill="black" class="townhall-name">Townhall Brasil</text>
+          <text x="300" y="210" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
 
-      <!-- Placeholder for Europe Townhall -->
-      <g>
-        <circle cx="400" cy="300" r="10" fill="orange" class="townhall-icon" />
-        <text x="400" y="340" font-size="12" fill="white" class="townhall-name">Europe Townhall</text>
-      </g>
+        <!-- Placeholder for Europe Townhall -->
+        <g>
+          <circle cx="400" cy="300" r="10" fill="orange" class="townhall-icon" />
+          <text x="400" y="340" font-size="20" fill="black" class="townhall-name">Europe Townhall</text>
+          <text x="400" y="360" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
 
-      <!-- Placeholder for South Asia Townhall -->
-      <g>
-        <circle cx="500" cy="100" r="10" fill="purple" class="townhall-icon" />
-        <text x="500" y="140" font-size="12" fill="white" class="townhall-name">South Asia Townhall</text>
-      </g>
+        <!-- Placeholder for South Asia Townhall -->
+        <g>
+          <circle cx="500" cy="100" r="10" fill="purple" class="townhall-icon" />
+          <text x="500" y="140" font-size="20" fill="black" class="townhall-name">South Asia Townhall</text>
+          <text x="500" y="160" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
 
-      <!-- Placeholder for Eastern Townhall -->
-      <g>
-        <circle cx="600" cy="350" r="10" fill="yellow" class="townhall-icon" />
-        <text x="600" y="390" font-size="12" fill="white" class="townhall-name">Eastern Townhall</text>
-      </g>
+        <!-- Placeholder for Eastern Townhall -->
+        <g>
+          <circle cx="600" cy="350" r="10" fill="yellow" class="townhall-icon" />
+          <text x="600" y="390" font-size="20" fill="black" class="townhall-name">Eastern Townhall</text>
+          <text x="600" y="410" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
 
-      <!-- Placeholder for MENA Townhall -->
-      <g>
-        <circle cx="700" cy="200" r="10" fill="cyan" class="townhall-icon" />
-        <text x="700" y="240" font-size="12" fill="white" class="townhall-name">MENA Townhall</text>
-      </g>
+        <!-- Placeholder for MENA Townhall -->
+        <g>
+          <circle cx="700" cy="200" r="10" fill="cyan" class="townhall-icon" />
+          <text x="700" y="240" font-size="20" fill="black" class="townhall-name">MENA Townhall</text>
+          <text x="700" y="260" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
 
-      <!-- Placeholder for Africa Townhall -->
-      <g>
-        <circle cx="800" cy="250" r="10" fill="pink" class="townhall-icon" />
-        <text x="800" y="290" font-size="12" fill="white" class="townhall-name">Africa Townhall</text>
-      </g>
-    </svg>
+        <!-- Placeholder for Africa Townhall -->
+        <g>
+          <circle cx="800" cy="250" r="10" fill="pink" class="townhall-icon" />
+          <text x="800" y="290" font-size="20" fill="black" class="townhall-name">Africa Townhall</text>
+          <text x="800" y="310" font-size="14" fill="black" class="townhall-time">Time and Date</text>
+        </g>
+      </svg>
+    </div>
   </div>
 
-  <div class="slide">
-    <h1>Slide 3</h1>
-    <p>This is the content of slide 3.</p>
+  <div class="slide" id="slide-3">
+    <div class="slide-background"></div>
+    <div class="slide-content">
+      <h1>Slide 3</h1>
+      <h2>Content for Slide 3</h2>
+    </div>
   </div>
 
-  <div class="slide">
-    <h1>Slide 4</h1>
-    <p>This is the content of slide 4.</p>
+  <div class="navigation">
+    <div class="navigation-button" id="previous-button">Previous</div>
+    <div class="navigation-button" id="next-button">Next</div>
   </div>
-
-  <!-- Add more slides as needed -->
 
   <script>
-    // Code for handling slide transitions
-    let currentSlideIndex = 0;
     const slides = document.querySelectorAll('.slide');
+    const previousButton = document.getElementById('previous-button');
+    const nextButton = document.getElementById('next-button');
+    let currentSlide = 0;
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'flex' : 'none';
+    function showSlide(slideIndex) {
+      slides.forEach((slide, index) => {
+        if (index === slideIndex) {
+          slide.style.display = 'block';
+        } else {
+          slide.style.display = 'none';
+        }
       });
     }
 
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'ArrowRight') {
-        currentSlideIndex = Math.min(currentSlideIndex + 1, slides.length - 1);
-        showSlide(currentSlideIndex);
-      } else if (event.key === 'ArrowLeft') {
-        currentSlideIndex = Math.max(currentSlideIndex - 1, 0);
-        showSlide(currentSlideIndex);
+    function navigateToPreviousSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        showSlide(currentSlide);
       }
-    });
+    }
 
-    showSlide(currentSlideIndex);
+    function navigateToNextSlide() {
+      if (currentSlide < slides.length - 1) {
+        currentSlide++;
+        showSlide(currentSlide);
+      }
+    }
+
+    previousButton.addEventListener('click', navigateToPreviousSlide);
+    nextButton.addEventListener('click', navigateToNextSlide);
+
+    showSlide(currentSlide);
   </script>
 </body>
 </html>
