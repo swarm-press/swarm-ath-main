@@ -1,245 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Slide Deck</title>
   <style>
-    /* Define CSS classes and IDs for slide components */
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .slides-container {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      background-image: url('path/to/background-image.jpg');
-      background-size: cover;
-    }
-
-    .slides-container::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 5%, transparent 5%);
-      background-repeat: repeat;
-      pointer-events: none;
-    }
-
     .slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      opacity: 0;
-      transition: opacity 0.5s;
+      background: linear-gradient(to bottom, #2BABDE, white);
     }
-
-    .slide.active {
-      opacity: 1;
-    }
-
-    .slide-logo {
-      position: absolute;
-      top: calc(33vh / 2); /* Adjust the positioning as needed */
-      left: calc(50% - (logo-width / 2)); /* Adjust the positioning as needed */
-      opacity: 0.65;
-    }
-
+  
     .slide h1 {
-      font-family: 'Cooper Black', sans-serif;
+      font-family: corben, sans-serif;
       font-size: 48px;
       margin-bottom: 10px;
     }
-
+  
     .slide h2 {
       font-family: 'Lobster', cursive;
       font-size: 24px;
     }
-
-    .townhall-map {
-      position: relative;
-      width: 100%;
-      height: 100%;
+  
+    .slide-2 {
+      background-color: gray;
+      background-image: radial-gradient(circle, transparent 30%, rgba(0, 0, 0, 0.1) 30%);
+      background-size: 10px 10px;
+      height: 100vh;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-content: space-between;
-      align-items: flex-start;
-      padding: 20px;
-    }
-
-    .townhall-item {
-      position: relative;
-      width: 20%;
-      height: 20%;
-      display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .slide-2 h1 {
       color: white;
-      font-family: 'Cooper Black', sans-serif;
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
-
-    .townhall-item-circle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 80%;
-      height: 80%;
-      border-radius: 50%;
+  
+    .slide-2 h2 {
+      color: white;
+      font-size: 18px;
     }
-
-    /* Navigation Buttons */
-    .navigation {
+  
+    .townhall-icons {
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      align-items: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-
-    #prevButton {
-      left: 20px;
-    }
-
-    #nextButton {
-      right: 20px;
-    }
-
-    .navigation-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      font-size: 20px;
+  
+    .townhall-icon {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url(path/to/townhall-icon.png);
+      background-size: cover;
+      transition: transform 0.3s;
       cursor: pointer;
-      transition: background-color 0.3s;
     }
-
-    .navigation-button:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+  
+    .townhall-icon:hover {
+      transform: scale(1.2);
     }
-
-    .navigation-button:active {
-      background-color: rgba(0, 0, 0, 1);
+  
+    .townhall-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px;
+      color: white;
+      text-align: center;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 <body>
-  <div class="slides-container">
-    <!-- Slide 1 -->
-    <div class="slide active">
-      <img class="slide-logo" src="path/to/logo.png" alt="Logo">
-      <h1>Centralized Catalyst Swarm</h1>
-      <h2>AFTER TOWN HALL</h2>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="slide">
-      <h1>Join the Town Halls</h1>
-      <h2><a href="https://catalystswarm.com/building-communities/">https://catalystswarm.com/building-communities/</a></h2>
-      <div class="townhall-map">
-        <div class="townhall-item" style="left: 15%; top: 20%;">
-          <div class="townhall-item-circle" style="background-color: red;"></div>
-          Pacific Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 70%; top: 30%;">
-          <div class="townhall-item-circle" style="background-color: orange;"></div>
-          LATAM Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 30%; top: 45%;">
-          <div class="townhall-item-circle" style="background-color: yellow;"></div>
-          Townhall Brasil<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 60%; top: 60%;">
-          <div class="townhall-item-circle" style="background-color: green;"></div>
-          Europe Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 20%; top: 70%;">
-          <div class="townhall-item-circle" style="background-color: cyan;"></div>
-          South Asia Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 40%; top: 80%;">
-          <div class="townhall-item-circle" style="background-color: blue;"></div>
-          Eastern Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 60%; top: 90%;">
-          <div class="townhall-item-circle" style="background-color: indigo;"></div>
-          MENA Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 15%; top: 90%;">
-          <div class="townhall-item-circle" style="background-color: violet;"></div>
-          Africa Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 40%; top: 50%;">
-          <div class="townhall-item-circle" style="background-color: red;"></div>
-          Eastern Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 80%; top: 60%;">
-          <div class="townhall-item-circle" style="background-color: orange;"></div>
-          MENA Townhall<br>
-          Placeholder for time and date
-        </div>
-        <div class="townhall-item" style="left: 90%; top: 20%;">
-          <div class="townhall-item-circle" style="background-color: yellow;"></div>
-          Africa Townhall<br>
-          Placeholder for time and date
-        </div>
-      </div>
-    </div>
-
-    <!-- Navigation Buttons -->
-    <div class="navigation">
-      <div class="navigation-button" id="prevButton">&lt;</div>
-      <div class="navigation-button" id="nextButton">&gt;</div>
-    </div>
+  <div class="slide">
+    <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" width="logo-width" height="33vh" />
+    <h1>CATALYST SWARM</h1>
+    <h2>AFTER TOWN HALL</h2>
   </div>
 
-  <script>
-    // JavaScript code for slide navigation
-    const slides = document.querySelectorAll('.slide');
-    const prevButton = document.getElementById('prevButton');
-    const nextButton = document.getElementById('nextButton');
-    let currentSlide = 0;
+  <div class="slide slide-2">
 
-    function showSlide(n) {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = (n + slides.length) % slides.length;
-      slides[currentSlide].classList.add('active');
-    }
-
-    prevButton.addEventListener('click', () => showSlide(currentSlide - 1));
-    nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
-
-    // Show initial slide
-    showSlide(currentSlide);
-  </script>
+    <h1>Join the Town Halls</h1>
+    <h2>https://catalystswarm.com/building-communities/</h2>
+    <svg class="townhall-icons" xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+      <!-- Placeholder for Pacific Townhall -->
+      <g>
+        <circle cx="100" cy="200" r="10" fill="red" class="townhall-icon" />
+        <text x="100" y="240" font-size="12" fill="white" class="townhall-name">Pacific Townhall</text>
+      </g>
+  
+      <!-- Placeholder for LATAM Townhall -->
+      <g>
+        <circle cx="200" cy="250" r="10" fill="green" class="townhall-icon" />
+        <text x="200" y="290" font-size="12" fill="white" class="townhall-name">LATAM Townhall</text>
+      </g>
+  
+      <!-- Placeholder for Europe Townhall -->
+      <g>
+        <circle cx="300" cy="300" r="10" fill="blue" class="townhall-icon" />
+        <text x="300" y="340" font-size="12" fill="white" class="townhall-name">Europe Townhall</text>
+      </g>
+  
+      <!-- Placeholder for Africa Townhall -->
+      <g>
+        <circle cx="400" cy="400" r="10" fill="yellow" class="townhall-icon" />
+        <text x="400" y="440" font-size="12" fill="white" class="townhall-name">Africa Townhall</text>
+      </g>
+    </svg>
+  </div>
 </body>
 </html>
