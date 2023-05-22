@@ -33,6 +33,50 @@
     font-family: 'Lobster', cursive;
     font-size: 24px;
   }
+.map-image {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .location-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-image: url(path/to/location-icon.png);
+    background-size: cover;
+  }
+  
+  .arrow-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Corben', sans-serif;
+  }
+  
+  .arrow {
+    width: 60px;
+    height: 60px;
+    background-image: url(path/to/arrow-icon.png);
+    background-size: cover;
+    margin-bottom: 10px;
+  }
+  
+  .time-date-placeholder {
+    font-size: 18px;
+  }
 </style>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
@@ -46,9 +90,45 @@
   </div>
 
   <div class="slide">
-    <h1>Slide 2</h1>
-    <p>This is the content of slide 2.</p>
+  <h1>Join the Town Halls</h1>
+  <h2>https://catalystswarm.com/building-communities/</h2>
+  <div class="map-image">
+    <div class="location-icon"></div>
+    <div class="arrow-container" style="top: 30%; left: 15%;">
+      <div class="arrow"></div>
+      <div class="time-date-placeholder">Pacific Townhall</div>
+    </div>
+    <div class="arrow-container" style="top: 45%; left: 60%;">
+      <div class="arrow"></div>
+      <div class="time-date-placeholder">LATAM Townhall</div>
+    </div>
+    <div class="arrow-container" style="top: 55%; left: 25%;">
+      <div class="arrow"></div>
+      <div class="time-date-placeholder">Townhall Brasil</div>
+    </div>
+    <div class="arrow-container" style="top: 30%; left: 70%;">
+      <div class="arrow"></div>
+      <div class="time-date-placeholder">Europe Townhall</div>
+    </div>
+    <div class="arrow-container" style="top: 70%; left: 25%;">
+      <div class="arrow"></div>
+      <div class="time-date-placeholder">South Asia Townhall</div>
+    </div>
+    <div class="arrow-container" style="top: 75%; left: 70%;">
+      <div class="arrow"></div>
+      <div class="time-date-placeholder">Eastern Townhall</div>
+    </div>
+    <div class="arrow-container" style="top: 50%; left: 90%;">
+      <div class="arrow"></div>
+      <div class="time-date-placeholder">MENA Townhall</div>
+</div>
+<div class="arrow-container" style="top: 80%; left: 40%;">
+<div class="arrow"></div>
+<div class="time-date-placeholder">Africa Townhall</div>
+</div>
+
   </div>
+</div>
 
   <div class="slide">
     <h1>Slide 3</h1>
