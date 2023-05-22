@@ -54,19 +54,31 @@
   <div class="slide" id="slide-1">
     <div class="slide-background"></div>
     <div class="slide-content">
-      <h1>Slide 1</h1>
-      <h2>Content for Slide 1</h2>
+      <img src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" class="slide-logo">
+      <h1>CATALYST SWARM</h1>
+      <h2>AFTER TOWN HALL</h2>
     </div>
-    <img src="path/to/townhall-icon.png" alt="Townhall Logo" class="slide-logo">
   </div>
 
   <div class="slide" id="slide-2">
     <div class="slide-background"></div>
     <div class="slide-content">
-      <h1>Slide 2</h1>
-      <h2>Content for Slide 2</h2>
+      <h1>Join the Town Halls</h1>
+      <h2><a href="https://catalystswarm.com/building-communities/">https://catalystswarm.com/building-communities/</a></h2>
+      <ul>
+        <li>Pacific Townhall (With placeholder for time and date)</li>
+        <li>LATAM Townhall (With placeholder for time and date)</li>
+        <li>Townhall Brasil (With placeholder for time and date)</li>
+        <li>Europe Townhall (With placeholder for time and date)</li>
+        <li>South Asia Townhall (With placeholder for time and date)</li>
+        <li>Eastern Townhall (With placeholder for time and date)</li>
+        <li>MENA Townhall (With placeholder for time and date)</li>
+        <li>Africa Townhall (With placeholder for time and date)</li>
+        <li>Eastern Townhall (With placeholder for time and date)</li>
+        <li>MENA Townhall (With placeholder for time and date)</li>
+        <li>Africa Townhall (With placeholder for time and date)</li>
+      </ul>
     </div>
-    <img src="path/to/townhall-icon.png" alt="Townhall Logo" class="slide-logo">
   </div>
 
   <!-- Add more slides here -->
@@ -83,27 +95,26 @@
     let currentSlide = 0;
 
     function showSlide(slideIndex) {
-      slides.forEach((slide, index) => {
-        if (index === slideIndex) {
-          slide.style.display = 'block';
-        } else {
-          slide.style.display = 'none';
-        }
+      slides.forEach((slide) => {
+        slide.style.display = 'none';
       });
-    }
-
-    function navigateToPreviousSlide() {
-      if (currentSlide > 0) {
-        currentSlide--;
-        showSlide(currentSlide);
-      }
+      slides[slideIndex].style.display = 'flex';
     }
 
     function navigateToNextSlide() {
-      if (currentSlide < slides.length - 1) {
-        currentSlide++;
-        showSlide(currentSlide);
+      currentSlide++;
+      if (currentSlide >= slides.length) {
+        currentSlide = 0;
       }
+      showSlide(currentSlide);
+    }
+
+    function navigateToPreviousSlide() {
+      currentSlide--;
+      if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+      }
+      showSlide(currentSlide);
     }
 
     previousButton.addEventListener('click', navigateToPreviousSlide);
