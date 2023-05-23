@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SWARM ATH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <style>
+        /* CSS styles for the slides */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Corben, Cooper Black, Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+            position: relative;
+        }
+
+        /* Slide 1 and 2 */
+        .slide-1 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            align-items: center;
+        }
+
+        .slide-logo {
+            width: 33%;
+            opacity: 0.65;
+        }
+
+        .slide-text {
+            width: 67%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .slide-title {
+            font-family: 'Cooper Black', sans-serif;
+            font-size: 48px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .slide-subtitle {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide-2 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #FDD44C;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 150px;
+            /* Updated size */
+            text-align: center;
+            color: white;
+            font-family: 'Corben', sans-serif;
+            font-size: 16px;
+            /* Updated size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 20px;
+            /* Updated size */
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        /* Slide 3 to 7 */
+        .slide-3,
+        .slide-4,
+        .slide-5,
+        .slide-6,
+        .slide-7 {
+            background: linear-gradient(to bottom, #FDD44C, #BD930A);
+        }
+
+        /* Slide 8 to 10 */
+        .slide-8,
+        .slide-9,
+        .slide-10 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+        }
+
+        /* Logo */
+        .slide-logo {
+            position: absolute;
+            top: calc(50% - 16.5vh);
+            opacity: 0.65;
+            width: auto;
+            height: 33vh;
+        }
+
+        /* Title */
+        .slide-title {
+            font-size: 48px;
+            text-align: center;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: darkblue;
+        }
+
+        /* Subtitle */
+        .slide-subtitle {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 10px;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: darkblue;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<body>
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide slide-1">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <div class="slide-text">
+                <h1 class="slide-title">CATALYST SWARM</h1>
+                <h2 class="slide-subtitle">After Town Hall</h2>
+            </div>
+        </div>
+
+
+        <!-- Slide 2 -->
+        <div class="slide slide-2">
+            <h1 class="slide-title">Join The Town Halls</h1>
+            <h2 class="slide-subtitle">https://catalystswarm.com/building-communities/</h2>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/pacific-logo.png" alt="Pacific Logo" />
+                <h3 class="card-title">Pacific Townhall</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/latam-logo.png" alt="LATAM Logo" />
+                <h3 class="card-title">LATAM Townhall</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/brasil-logo.png" alt="Townhall Brasil Logo" />
+                <h3 class="card-title">Townhall Brasil</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/europe-logo.png" alt="Europe Logo" />
+                <h3 class="card-title">Europe Townhall</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/south-asia-logo.png" alt="South Asia Logo" />
+                <h3 class="card-title">South Asia Townhall</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/eastern-logo.png" alt="Eastern Logo" />
+                <h3 class="card-title">Eastern Townhall</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/mena-logo.png" alt="MENA Logo" />
+                <h3 class="card-title">MENA Townhall</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/africa-logo.png" alt="Africa Logo" />
+                <h3 class="card-title">Africa Townhall</h3>
+                <p class="card-date">Time and Date Placeholder</p>
+                <p class="card-twitter">Twitter Handle Placeholder</p>
+            </div>
+
+            <!-- Add more card placeholders here for Town Hall events 9-10 -->
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="slide slide-3">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 3</h1>
+            <h2 class="slide-subtitle">Subtitle 3</h2>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide slide-4">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 4</h1>
+            <h2 class="slide-subtitle">Subtitle 4</h2>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide slide-5">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 5</h1>
+            <h2 class="slide-subtitle">Subtitle 5</h2>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="slide slide-6">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 6</h1>
+            <h2 class="slide-subtitle">Subtitle 6</h2>
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="slide slide-7">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 7</h1>
+            <h2 class="slide-subtitle">Subtitle 7</h2>
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="slide slide-8">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 8</h1>
+            <h2 class="slide-subtitle">Subtitle 8</h2>
+        </div>
+
+        <!-- Slide 9 -->
+        <div class="slide slide-9">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 9</h1>
+            <h2 class="slide-subtitle">Subtitle 9</h2>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide slide-10">
+            <img class="slide-logo" src="path/to/catalyst-swarm-logo.png" alt="Catalyst Swarm Logo" />
+            <h1 class="slide-title">Slide 10</h1>
+            <h2 class="slide-subtitle">Subtitle 10</h2>
+        </div>
+    </div>
+    <script>
+        var slides = document.querySelectorAll('.slide');
+        var currentSlide = 0;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            slides[n].classList.add('active');
+            currentSlide = n;
+        }
+
+        function nextSlide() {
+            if (currentSlide === slides.length - 1) {
+                showSlide(0);
+            } else {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide === 0) {
+                showSlide(slides.length - 1);
+            } else {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        setInterval(nextSlide, 5000);
+    </script>
+</body>
+
+</html>

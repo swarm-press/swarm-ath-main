@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SWARM ATH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <style>
+        /* CSS styles for the slides */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Corben, Cooper Black, Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+            position: relative;
+        }
+
+        /* Slide 1 and 2 */
+        .slide-1 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            align-items: center;
+        }
+
+        .slide-logo {
+            width: 33%;
+            opacity: 0.65;
+        }
+
+        .slide-text {
+            width: 67%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .slide-title {
+            font-family: 'Cooper Black', sans-serif;
+            font-size: 48px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .slide-subtitle {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide-2 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #FDD44C;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 150px;
+            /* Updated size */
+            text-align: center;
+            color: white;
+            font-family: 'Corben', sans-serif;
+            font-size: 16px;
+            /* Updated size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 20px;
+            /* Updated size */
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        /* Slide 3 to 7 */
+        .slide-3,
+        .slide-4,
+        .slide-5,
+        .slide-6,
+        .slide-7 {
+            background: linear-gradient(to bottom, #FDD44C, #BD930A);
+        }
+
+        /* Slide 8 to 10 */
+        .slide-8,
+        .slide-9,
+        .slide-10 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+        }
+
+        /* Logo */
+        .slide-logo {
+            position: absolute;
+            top: calc(50% - 16.5vh);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 1;
+        }
+
+        .slide-in {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide slide-1">
+        <img class="slide-logo fade-in" src="your-logo.png" alt="Logo">
+        <div class="slide-text fade-in">
+            <h1 class="slide-title">Welcome to SWARM ATH!</h1>
+            <p class="slide-subtitle">Discover the Power of Teamwork</p>
+        </div>
+    </div>
+
+    <div class="slide slide-2">
+        <div class="card">
+            <h2 class="card-title">Card 1</h2>
+            <p>Content for Card 1</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Card 2</h2>
+            <p>Content for Card 2</p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Card 3</h2>
+            <p>Content for Card 3</p>
+        </div>
+    </div>
+
+    <div class="slide slide-3">
+        <!-- Content for Slide 3 -->
+    </div>
+
+    <div class="slide slide-4">
+        <!-- Content for Slide 4 -->
+    </div>
+
+    <div class="slide slide-5">
+        <!-- Content for Slide 5 -->
+    </div>
+
+    <div class="slide slide-6">
+        <!-- Content for Slide 6 -->
+    </div>
+
+    <div class="slide slide-7">
+        <!-- Content for Slide 7 -->
+    </div>
+
+    <div class="slide slide-8">
+        <!-- Content for Slide 8 -->
+    </div>
+
+    <div class="slide slide-9">
+        <!-- Content for Slide 9 -->
+    </div>
+
+    <div class="slide slide-10">
+        <!-- Content for Slide 10 -->
+    </div>
+
+    <script>
+        // Slideshow functionality
+        const slides = document.querySelectorAll('.slide');
+        const logo = document.querySelector('.slide-logo');
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide) => {
+                slide.classList.remove('fade-in');
+                slide.classList.remove('slide-in');
+            });
+
+            slides[index].classList.add('fade-in');
+
+            if (index === 0) {
+                logo.classList.add('fade-in');
+            } else {
+                logo.classList.remove('fade-in');
+            }
+
+            if (index > 0 && index < 10) {
+                slides[index].classList.add('slide-in');
+            }
+
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            const nextIndex = currentSlide + 1;
+            if (nextIndex < slides.length) {
+                showSlide(nextIndex);
+            }
+        }
+
+        function previousSlide() {
+            const prevIndex = currentSlide - 1;
+            if (prevIndex >= 0) {
+                showSlide(prevIndex);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+                nextSlide();
+            } else if (event.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        // Mouse navigation
+        document.addEventListener('wheel', (event) => {
+            const delta = event.deltaY;
+            if (delta > 0) {
+                nextSlide();
+            } else if (delta < 0) {
+                previousSlide();
+            }
+        });
+
+        // Initial setup
+        showSlide(0);
+    </script>
+</body>
+
+</html>

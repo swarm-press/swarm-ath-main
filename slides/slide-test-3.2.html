@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SWARM ATH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <style>
+        /* CSS styles for the slides */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Corben, Cooper Black, Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+            position: relative;
+        }
+
+        /* Slide 1 and 2 */
+        .slide-1 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            align-items: center;
+        }
+
+        .slide-logo {
+            width: 33%;
+            opacity: 0.65;
+        }
+
+        .slide-text {
+            width: 67%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .slide-title {
+            font-family: 'Cooper Black', sans-serif;
+            font-size: 48px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .slide-subtitle {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .slide-2 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #FDD44C;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            /* Updated size */
+            text-align: center;
+            color: white;
+            font-family: 'Corben', sans-serif;
+            font-size: 10px;
+            /* Updated size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(2);
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 14px;
+            /* Updated size */
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        /* Slide 3 to 7 */
+        .slide-3 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide-4 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide-5 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide-6 {
+            background: linear-gradient(to bottom, #FDD44C, #BD930A);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide-7 {
+            background: linear-gradient(to bottom, #FDD44C, #BD930A);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Slide 8 to 10 */
+        .slide-8,
+        .slide-9,
+        .slide-10 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Logo */
+        .slide-logo {
+            position: absolute;
+            top: calc(50% - 16.5vh);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 1;
+        }
+
+        .slide-in {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+</style>
+</head>
+
+<body>
+    <div class="slide slide-1">
+        <img class="slide-logo fade-in" src="your-logo.png" alt="Logo">
+        <div class="slide-text fade-in">
+            <h1 class="slide-title">Welcome to SWARM ATH!</h1>
+            <p class="slide-subtitle">Discover the Power of Community</p>
+        </div>
+    </div>
+
+    <div class="slide slide-2">
+        <div class="title">
+            <div class="slide-text fade-in"></div>
+            <h1 class="slide-title">Join The Town Halls</h1>
+            <p class="slide-subtitle">CatalystSwarm.com/Building-Communities/</p>
+        </div>
+    </div>
+
+    <div class="slide slide-3">
+        <div class="card">
+            <img class="slide-logo" src="path/to/pacific-logo.png" alt="Pacific Logo" />
+            <h3 class="card-title">Pacific Townhall</h3>
+            <p class="card-date">Date: May 30, 2023</p>
+            <p class="card-twitter">Twitter: @pacific_townhall</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/latam-logo.png" alt="LATAM Logo" />
+            <h3 class="card-title">LATAM Townhall</h3>
+            <p class="card-date">Date: June 5, 2023</p>
+            <p class="card-twitter">Twitter: @latam_townhall</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/brasil-logo.png" alt="Townhall Brasil Logo" />
+            <h3 class="card-title">Townhall Brasil</h3>
+            <p class="card-date">Date: June 12, 2023</p>
+            <p class="card-twitter">Twitter: @brasil_townhall</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/europe-logo.png" alt="Europe Logo" />
+            <h3 class="card-title">Europe Townhall</h3>
+            <p class="card-date">Date: June 18, 2023</p>
+            <p class="card-twitter">Twitter: @europe_townhall</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/south-asia-logo.png" alt="South Asia Logo" />
+            <h3 class="card-title">South Asia Townhall</h3>
+            <p class="card-date">Date: June 25, 2023</p>
+            <p class="card-twitter">Twitter: @southasia_townhall</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/eastern-logo.png" alt="Eastern Logo" />
+            <h3 class="card-title">Eastern Townhall</h3>
+            <p class="card-date">Date: July 2, 2023</p>
+            <p class="card-twitter">Twitter: @eastern_townhall</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/mena-logo.png" alt="MENA Logo" />
+            <h3 class="card-title">MENA Townhall</h3>
+            <p class="card-date">Date: July 9, 2023</p>
+            <p class="card-twitter">Twitter: @mena_townhall</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/africa-logo.png" alt="Africa Logo" />
+            <h3 class="card-title">Africa Townhall</h3>
+            <p class="card-date">Date: July 16, 2023</p>
+            <p class="card-twitter">Twitter: @africa_townhall</p>
+        </div>
+    </div>
+
+    <div class="slide slide-4">
+        <div class="title">
+            <div class="slide-text fade-in"></div>
+            <h1 class="slide-title">Join The Community Events</h1>
+            <p class="slide-subtitle">CatalystSwarm.com/Building-Communities</p>
+        </div>
+    </div>
+
+    <div class="slide slide-5">
+        <div class="card">
+            <img class="slide-logo" src="path/to/gimbalabs-logo.png" alt="Gimbalabs Logo" />
+            <h3 class="card-title">Gimbalabs Developer Community</h3>
+            <p class="card-date">Tuesdays – 18:00 UTC</p>
+            <p class="card-twitter">The weekly playground sessions, a place to meet awesome projects and people at the
+                Gimbalabs Developer Community.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/lidonation-logo.png" alt="Lidonation Logo" />
+            <h3 class="card-title">Lidonation</h3>
+            <p class="card-date">Wednesdays – 15:00 UTC</p>
+            <p class="card-twitter">Community-driven initiatives which aim to build solutions and relations between
+                climate friendship and blockchain technology.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/cardano4climate-logo.png" alt="Cardano 4 Climate Logo" />
+            <h3 class="card-title">Cardano 4 Climate</h3>
+            <p class="card-date">Saturdays – 17:00 UTC</p>
+            <p class="card-twitter">Each Saturday, Swarm members and the community come together to write human code for
+                blockchain ecosystems.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/swarmsessions-logo.png" alt="Swarm Sessions Logo" />
+            <h3 class="card-title">Swarm Sessions</h3>
+            <p class="card-date">Tuesdays, Wednesdays & Fridays – 3:30am UTC</p>
+            <p class="card-twitter">Swarm Sessions is a community-driven initiative that helps and supports the
+                community and newcomers to engage with Cardano and the Catalyst Ecosystem.</p>
+        </div>
+    </div>
+
+
+    <!-- Content for Slide 5 -->
+    </div>
+
+    <div class="slide slide-6">
+        <div class="slide-text fade-in">
+            <h2 class="slide-title">Want to Host a Breakout Room or </h2>
+            <h2 class="slide-title">Get your Event on Swarm Calendar?</h2>
+            <div class="card">
+                <img class="slide-logo" src="path/to/gimbalabs-logo.png" alt="Gimbalabs Logo" />
+                <h3 class="card-title">Fill the Form!</h3>
+                <p class="card-date">scan:</p>
+                <img src="">
+                <p class="card-twitter">or visist: LINK</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide slide-7">
+        <img class="slide-logo fade-in" src="your-logo.png" alt="Logo">
+        <div class="slide-text fade-in">
+            <h1 class="slide-title">Breakout Rooms</h1>
+            <p class="slide-subtitle">up next</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="slide slide-8">
+        <div class="card">
+            <img class="slide-logo" src="path/to/gimbalabs-logo.png" alt="Gimbalabs Logo" />
+            <h3 class="card-title">Gimbalabs Developer Community</h3>
+            <p class="card-date">Tuesdays – 18:00 UTC</p>
+            <p class="card-twitter">The weekly playground sessions, a place to meet awesome projects and people at the
+                Gimbalabs Developer Community.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/lidonation-logo.png" alt="Lidonation Logo" />
+            <h3 class="card-title">Lidonation</h3>
+            <p class="card-date">Wednesdays – 15:00 UTC</p>
+            <p class="card-twitter">Community-driven initiatives which aim to build solutions and relations between
+                climate friendship and blockchain technology.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/cardano4climate-logo.png" alt="Cardano 4 Climate Logo" />
+            <h3 class="card-title">Cardano 4 Climate</h3>
+            <p class="card-date">Saturdays – 17:00 UTC</p>
+            <p class="card-twitter">Each Saturday, Swarm members and the community come together to write human code for
+                blockchain ecosystems.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/swarmsessions-logo.png" alt="Swarm Sessions Logo" />
+            <h3 class="card-title">Swarm Sessions</h3>
+            <p class="card-date">Tuesdays, Wednesdays & Fridays – 3:30am UTC</p>
+            <p class="card-twitter">Swarm Sessions is a community-driven initiative that helps and supports the
+                community and newcomers to engage with Cardano and the Catalyst Ecosystem.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="slide slide-9">
+        <!-- Content for Slide 9 -->
+    </div>
+
+    <div class="slide slide-10">
+        <!-- Content for Slide 10 -->
+    </div>
+
+    <script>
+        // Slideshow functionality
+        const slides = document.querySelectorAll('.slide');
+        const logo = document.querySelector('.slide-logo');
+
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide) => {
+                slide.classList.remove('fade-in');
+                slide.classList.remove('slide-in');
+            });
+
+            slides[index].classList.add('fade-in');
+
+            if (index === 0) {
+                logo.classList.add('fade-in');
+            } else {
+                logo.classList.remove('fade-in');
+            }
+
+            if (index > 0 && index < 10) {
+                slides[index].classList.add('slide-in');
+            }
+
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            const nextIndex = currentSlide + 1;
+            if (nextIndex < slides.length) {
+                showSlide(nextIndex);
+            }
+        }
+
+        function previousSlide() {
+            const prevIndex = currentSlide - 1;
+            if (prevIndex >= 0) {
+                showSlide(prevIndex);
+            }
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight') {
+                nextSlide();
+            } else if (event.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        // Mouse navigation
+        document.addEventListener('wheel', (event) => {
+            const delta = event.deltaY;
+            if (delta > 0) {
+                nextSlide();
+            } else if (delta < 0) {
+                previousSlide();
+            }
+        });
+
+        // Initial setup
+        showSlide(0);
+    </script>
+</body>
+
+</html>

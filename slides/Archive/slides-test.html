@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slide {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: none;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .slide-content {
+            text-align: center;
+        }
+
+        .slide-number {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%);
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #f7c53de5;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button.prev {
+            left: 10px;
+        }
+
+        button.next {
+            right: 10px;
+        }
+
+        /* Slide 2 Styles */
+        .slide-2 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+        }
+
+        .slide-2 .slide-title {
+            font-size: 32px;
+            margin-top: 0;
+            color: #333;
+        }
+
+        .slide-2 .slide-subtitle {
+            font-size: 24px;
+            color: #888;
+        }
+
+        .slide-2 .card {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide-2 .card-title {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .slide-2 .card-date {
+            color: #888;
+        }
+
+        .slide-2 .card-twitter {
+            color: #888;
+        }
+
+        /* Animation */
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+        @keyframes slideOut {
+            0% {
+                opacity: 1;
+                transform: translate(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(-100px);
+            }
+        }
+    </style>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            css Copy code .slide {
+                background: linear-gradient(to bottom, #2BABDE, white);
+                display: none;
+                height: 100vh;
+                padding: 20px;
+                box-sizing: border-box;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+
+            .slide.active {
+                display: block;
+            }
+
+            .slide-content {
+                text-align: center;
+            }
+
+            .slide-number {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 16px;
+                color: #666;
+            }
+
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%);
+                font-size: 24px;
+                padding: 10px 20px;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button.prev {
+                left: 10px;
+            }
+
+            button.next {
+                right: 10px;
+            }
+
+            /* Slide 2 Styles */
+            .slide-2 {
+                background: linear-gradient(to bottom, #2BABDE, white);
+            }
+
+            .slide-2 .slide-title {
+                font-size: 32px;
+                margin-top: 0;
+                color: #333;
+            }
+
+            .slide-2 .slide-subtitle {
+                font-size: 24px;
+                color: #888;
+            }
+
+            .slide-2 .card-container {
+                display: flex;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+            }
+
+            .slide-2 .card {
+                flex: 0 0 auto;
+                margin: 0 10px;
+                width: 300px;
+                /* Adjust the width as needed */
+                scroll-snap-align: start;
+            }
+
+            .slide-2 .card-title {
+                font-size: 24px;
+                margin-top: 0;
+            }
+
+            .slide-2 .card-date {
+                color: #888;
+            }
+
+            .slide-2 .card-twitter {
+                color: #888;
+            }
+
+            /* Animation */
+            @keyframes slideIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(100px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(0);
+                }
+            }
+
+            @keyframes slideOut {
+                0% {
+                    opacity: 1;
+                    transform: translate(0);
+                }
+
+                100% {
+                    opacity: 0;
+                    transform: translate(-100px);
+                }
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="slide active">
+        <h2 class="slide-content">Slide 1</h2>
+        <span class="slide-number">1 / 10</span>
+    </div>
+    <div class="slide slide-2">
+        <h1 class="slide-title">Join The Town Halls</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="card1.jpg" alt="Europe Town Hall">
+                <div class="card-content">
+                    <h3 class="card-title">Europe Town Hall</h3>
+                    <p class="card-description">Each 2nd Thursday - 17:30 UTC</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card2.jpg" alt="South Asia Town Hall">
+                <div class="card-content">
+                    <h3 class="card-title">South Asia Town Hall</h3>
+                    <p class="card-description">Each 2nd Thursday - 18:45 UTC</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card3.jpg" alt="Pacific Town Hall">
+                <div class="card-content">
+                    <h3 class="card-title">Pacific Town Hall</h3>
+                    <p class="card-description">Each 2nd Thursday - 02:00 am UTC</p>
+                    <p class="card-description">Each 2nd Saturday - 09:00 UTC</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card4.jpg" alt="MENA Town Hall">
+                <div class="card-content">
+                    <h3 class="card-title">MENA Town Hall</h3>
+                    <p class="card-description">Each 2nd Thursday - 18:45 UTC</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card5.jpg" alt="LATAM Town Hall">
+                <div class="card-content">
+                    <h3 class="card-title">LATAM Town Hall</h3>
+                    <p class="card-description">Each Thursday - 21:30 UTC</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="card6.jpg" alt="Africa Town Hall">
+                <div class="card-content">
+                    <h3 class="card-title">Africa Town Hall</h3>
+                    <p class="card-description">Each 2nd Friday - 18:00 UTC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="slide">
+        <h1 class="slide-title">Community Events</h1>
+        <h2 class="slide-subtitle">Join and Meet Catalyst Projects and their communities</h2>
+        <div class="card">
+            <img class="slide-logo" src="path/to/gimbalabs-logo.png" alt="Gimbalabs Logo" />
+            <h3 class="card-title">Gimbalabs</h3>
+            <p class="card-date">Tuesdays – 18:00 UTC</p>
+            <p class="card-info">The weekly playground sessions, a place to meet awesome projects and people at the
+                Gimbalabs Developer Community.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/cardano4climate-logo.png" alt="Cardano 4 Climate Logo" />
+            <h3 class="card-title">Cardano 4 Climate</h3>
+            <p class="card-date">Wednesdays – 15:00 UTC</p>
+            <p class="card-info">Community driven initiatives which aim to build solutions and relations between
+                climate
+                friendship and blockchain technology.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/swarm-sessions-logo.png" alt="Swarm Sessions Logo" />
+            <h3 class="card-title">Swarm Sessions</h3>
+            <p class="card-date">Saturdays – 17:00 UTC</p>
+            <p class="card-info">Each Saturday, Swarm members and the community come together to write human code
+                for
+                blockchain ecosystems.</p>
+        </div>
+
+        <div class="card">
+            <img class="slide-logo" src="path/to/lidonation-logo.png" alt="Lidonation Logo" />
+            <h3 class="card-title">Lidonation</h3>
+            <p class="card-date">Tuesdays, Wednesdays &amp; Fridays – 3.30am UTC</p>
+            <p class="card-info">LIDO Nation helps and supports the community and newcomers to engage with Cardano
+                and
+                the Catalyst Ecosystem.</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2 class="slide-content">Slide 4</h2>
+        <span class="slide-number">4 / 10</span>
+    </div>
+    <div class="slide">
+        <h2 class="slide-content">Slide 5</h2>
+        <span class="slide-number">5 / 10</span>
+    </div>
+    <div class="slide">
+        <h2 class="slide-content">Slide 6</h2>
+        <span class="slide-number">6 / 10</span>
+    </div>
+    <div class="slide">
+        <h2 class="slide-content">Slide 7</h2>
+        <span class="slide-number">7 / 10</span>
+    </div>
+    <div class="slide">
+        <h2 class="slide-content">Slide 8</h2>
+        <span class="slide-number">8 / 10</span>
+    </div>
+    <div class="slide">
+        <h2 class="slide-content">Slide 9</h2>
+        <span class="slide-number">9 / 10</span>
+    </div>
+    <div class="slide">
+        <h2 class="slide-content">Slide 10</h2>
+        <span class="slide-number">10 / 10</span>
+    </div>
+
+    <button class="prev" onclick="prevSlide()">Previous</button>
+    <button class="next" onclick="nextSlide()">Next</button>
+
+    <script>
+        var slides = document.querySelectorAll('.slide');
+        var currentSlide = 0;
+
+        function showSlide(n) {
+            if (n >= slides.length) {
+                currentSlide = 0;
+            } else if (n < 0) {
+                currentSlide = slides.length - 1;
+            }
+
+            slides.forEach(function (slide) {
+                slide.classList.remove('active');
+            });
+
+            slides[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            slides[currentSlide].classList.remove('active');
+            slides[currentSlide].style.animationName = 'slideOut';
+            slides[currentSlide].style.animationDirection = 'reverse';
+
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+
+            slides[currentSlide].classList.add('active');
+            slides[currentSlide].style.animationName = 'slideIn';
+        }
+
+        function prevSlide() {
+            slides[currentSlide].classList.remove('active');
+            slides[currentSlide].style.animationName = 'slideOut';
+
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+
+            slides[currentSlide].classList.add('active');
+            slides[currentSlide].style.animationName = 'slideIn';
+            slides[currentSlide].style.animationDirection = 'reverse';
+        }
+
+        showSlide(currentSlide);
+        function showSlide(n) {
+            // Code remains the same
+        }
+
+        function nextSlide() {
+            // Code remains the same
+        }
+
+        function prevSlide() {
+            // Code remains the same
+        }
+
+    </script>
+</body>
+
+</html
