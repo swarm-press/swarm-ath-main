@@ -5,142 +5,157 @@
     <title>SWARM ATH</title>
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
     <style>
-       /* CSS styles for the slides */
-body {
-    margin: 0;
-    padding: 0;
-}
+        /* CSS styles for the slides */
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-.slide {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Corben, Cooper Black, Arial, sans-serif;
-    font-size: 24px;
-    color: white;
-    position: relative;
-}
+        .slide {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Corben, Cooper Black, Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+            position: relative;
+        }
 
-/* Slide 1 and 2 */
-.slide-1 {
-    background: linear-gradient(to bottom, #2BABDE, white);
-    display: flex;
-    align-items: center;
-}
+        /* Slide 1 and 2 */
+        .slide-1 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            align-items: center;
+        }
 
-.slide-logo {
-    width: 33%;
-    opacity: 0.65;
-}
+        .slide-logo {
+            width: 33%;
+            opacity: 0.65;
+        }
 
-.slide-text {
-    width: 67%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+        .slide-text {
+            width: 67%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-.slide-title {
-    font-family: 'Cooper Black', sans-serif;
-    font-size: 48px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
-}
+        .slide-title {
+            font-family: 'Cooper Black', sans-serif;
+            font-size: 48px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
 
-.slide-subtitle {
-    font-family: 'Lobster', cursive;
-    font-size: 24px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+        .slide-subtitle {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
-/* Slide 3 to 7 */
-.slide-3 {
-    background: linear-gradient(to bottom, #2BABDE, white);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Updated alignment */
-    padding-top: 80px; /* Added padding to align cards under title/subtitle */
-}
+        .slide-2 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
-.slide-4 {
-    background: linear-gradient(to bottom, #2BABDE, white);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Updated alignment */
-    padding-top: 80px; /* Added padding to align cards under title/subtitle */
-}
+        .card {
+            background-color: #FDD44C;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            /* Updated size */
+            text-align: center;
+            color: white;
+            font-family: 'Corben', sans-serif;
+            font-size: 10px;
+            /* Updated size */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
 
-.slide-5 {
-    background: linear-gradient(to bottom, #2BABDE, white);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Updated alignment */
-    padding-top: 80px; /* Added padding to align cards under title/subtitle */
-}
+        .card:hover {
+            transform: scale(2);
+        }
 
-.slide-6 {
-    background: linear-gradient(to bottom, #FDD44C, #BD930A);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Updated alignment */
-    padding-top: 80px; /* Added padding to align cards under title/subtitle */
-}
+        .card-title {
+            font-weight: bold;
+            font-size: 14px;
+            /* Updated size */
+            margin-bottom: 10px;
+        }
 
-.slide-7 {
-    background: linear-gradient(to bottom, #2BABDE, white);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Updated alignment */
-    padding-top: 80px; /* Added padding to align cards under title/subtitle */
-}
+        .card p {
+            margin: 5px 0;
+        }
 
-/* Slide 8 to 10 */
-.slide-8,
-.slide-9 {
-    background: linear-gradient(to bottom, #2BABDE, white);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Updated alignment */
-    padding-top: 80px; /* Added padding to align cards under title/subtitle */
-}
+        /* Slide 3 to 7 */
+        .slide-3 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Slide 10 */
-.slide-10 {
-    background: linear-gradient(to bottom, #FDD44C, #BD930A);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; /* Updated alignment */
-    padding-top: 80px; /* Added padding to align cards under title/subtitle */
-}
+        .slide-4 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Common styles for cards in slides 3 to 10 */
-.card {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    color: black;
-    font-family: Arial, sans-serif;
-    border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
+        .slide-5 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
+        .slide-6 {
+            background: linear-gradient(to bottom, #FDD44C, #BD930A);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide-7 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Slide 8 to 10 */
+        .slide-8,
+        .slide-9 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slide-10 {
+            background: linear-gradient(to bottom, #2BABDE, white);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
 
         /* Logo */
         .slide-logo {
