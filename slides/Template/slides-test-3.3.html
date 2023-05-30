@@ -4,267 +4,119 @@
 <head>
     <title>SWARM ATH</title>
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
-    <!DOCTYPE html>
-    <html>
+    <style>
+        /* CSS styles for the slide */
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    <head>
-        <style>
-            /* CSS styles for the slide */
-            body {
-                margin: 0;
-                padding: 0;
-            }
+        .div-with-break {
+            padding-bottom: 20px;
+            /* Adds padding below each div */
+        }
 
-            .slide {
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: linear-gradient(to bottom, #2BABDE, white);
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-            }
+        .slide {
+            min-height: 100vh;
+            height: flex;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #2BABDE, white);
+            flex-wrap: wrap;
+            position: relative;
+        }
 
-            .slide-logo {
-                width: 33%;
-                opacity: 0.65;
-            }
 
-            .slide-text {
-                width: 67%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
+        .slide-logo {
+            width: 33%;
+            opacity: 0.65;
+        }
 
-            .slide-title {
-                font-family: 'Cooper Black', sans-serif;
-                font-size: 48px;
-                color: white;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                margin-bottom: 10px;
-            }
+        .slide-text {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-            .slide-subtitle {
-                font-family: 'Lobster', cursive;
-                font-size: 24px;
-                color: white;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            }
+        .slide-title {
+            font-family: 'Cooper Black', sans-serif;
+            font-size: 48px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
 
-            .card-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 30px;
-            }
+        .slide-subtitle {
+            font-family: 'Lobster', cursive;
+            font-size: 24px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
 
-            .card {
-                width: 200px;
-                height: auto;
-                background-color: #FDD44C;
-                border-radius: 10px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-                margin: 10px;
-                padding: 20px;
-                font-size: 12px;
-                text-align: center;
-                color: white;
-                font-weight: bold;
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-                transition: transform 0.3s;
-                cursor: pointer;
-            }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+        }
 
-            .card:hover {
-                transform: scale(1.1);
-            }
+        .card {
+            width: 200px;
+            height: auto;
+            background-color: #FDD44C;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            font-size: 12px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
 
-            .card-title {
-                font-size: 16px;
-                margin-bottom: 10px;
-            }
+        .card:hover {
+            transform: scale(1.4);
+        }
 
-            .card p {
-                margin: 5px 0;
-            }
-        </style>
-    </head>
+        .card-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
 
 <body>
     <div class="slide">
-        <div class="slide-logo fade-in">
-            <img src="swarms-1.png" alt="Logo" class="transparent-logo">
-        </div>
-        <div class="slide-text fade-in">
+        <div class="title">
             <h1 class="slide-title">Welcome to SWARM ATH!</h1>
+            <img src="images/logos/swarms-1.png" alt="Logo" class="slide-logo">
             <p class="slide-subtitle">Discover the Power of Community</p>
         </div>
     </div>
-
+    </div>
     <div class="slide">
+        <div class="div-with-break"></div>
         <div class="title">
             <h1 class="slide-title">Join The Town Halls</h1>
-            <p class="slide-subtitle">CatalystSwarm.com/Building-Communities/
-        </div>
-    </div>
-    <div class="slide">
-        <div class="card">
-            <img class="slide-logo" src="path/to/pacific-logo.png" alt="Pacific Logo" />
-            <h3 class="card-title">Pacific Townhall</h3>
-            <h3 class="card-date">Each 2nd Thursday - 04:00 am UTC</h3>
-            <p class="card-twitter">Twitter: @pacific_townhall</p>
-            <p class="card-registration">Registration: <a href="link/to/registration" target="_blank"
-                    rel="noopener noreferrer">Register Here</a></p>
+            <p class="slide-subtitle">CatalystSwarm.com/Building-Communities</p>
         </div>
 
-        <div class="card">
-            <img class="slide-logo" src="path/to/latam-logo.png" alt="LATAM Logo" />
-            <h3 class="card-title">LATAM Townhall</h3>
-            <p class="card-date">Bi-weekly on Thursday - 21:30 UTC</p>
-            <p class="card-twitter">Twitter: <a href="https://twitter.com/LATAMCardano" target="_blank"
-                    rel="noopener noreferrer">@LATAMCardano</a></p>
-            <p class="card-registration">Registration: <a href="http://bit.ly/3O3an1S" target="_blank"
-                    rel="noopener noreferrer">Register Here</a></p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/brasil-logo.png" alt="Townhall Brasil Logo" />
-            <h3 class="card-title">Townhall Brasil</h3>
-            <p class="card-date">Bi-weekly on Thursday - 21:30 UTC</p>
-            <p class="card-twitter">Twitter: <a href="https://twitter.com/CatalystBrasil" target="_blank"
-                    rel="noopener noreferrer">@CatalystBrasil</a></p>
-            <p class="card-registration">Registration: <a href="http://bit.ly/3O3an1S" target="_blank"
-                    rel="noopener noreferrer">Register Here</a></p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/europe-logo.png" alt="Europe Logo" />
-            <h3 class="card-title">Europe Townhall</h3>
-            <p class="card-date">Each 2nd Thursday - 17:30 UTC</p>
-            <p class="card-twitter">Twitter: <a href="https://twitter.com/EuCardano" target="_blank"
-                    rel="noopener noreferrer">@EuCardano</a></p>
-            <p class="card-registration">Registration: <a
-                    href="https://zoom.us/meeting/register/tJUlcO2urDIsGtW-tNJtRYkhifo12e1RO_eR" target="_blank"
-                    rel="noopener noreferrer">Register Here</a></p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/south-asia-logo.png" alt="South Asia Logo" />
-            <h3 class="card-title">South Asia Town Hall</h3>
-            <p class="card-date">Each 2nd Thursday - 18:45 UTC</p>
-            <p class="card-twitter">Twitter: @southasia_townhall</p>
-            <p class="card-registration">Registration: <a href="link/to/registration" target="_blank"
-                    rel="noopener noreferrer">Register Here</a></p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/eastern-logo.png" alt="Eastern Logo" />
-            <h3 class="card-title">Eastern Townhall</h3>
-            <p class="card-date">Each 2nd Saturday - 09:00 UTC</p>
-            <p class="card-twitter">Twitter: <a href="https://twitter.com/c3eth" target="_blank"
-                    rel="noopener noreferrer">@c3eth</a></p>
-            <p class="card-registration">Registration: <a href="link/to/registration" target="_blank"
-                    rel="noopener noreferrer">Register Here</a></p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/mena-logo.png" alt="MENA Logo" />
-            <h3 class="card-title">MENA Townhall</h3>
-            <p class="card-date">Each 2nd Thursday - 18:45 UTC</p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/africa-logo.png" alt="Africa Logo" />
-            <h3 class="card-title">Africa Townhall</h3>
-            <p class="card-date">Each 2nd Friday - 18:00 UTC</p>
-            <p class="card-twitter">Twitter: <a href="https://twitter.com/africa_townhall" target="_blank"
-                    rel="noopener noreferrer">@africa_townhall</a></p>
-        </div>
-    </div>
-    </div>
-
-    <div class="slide">
-        <div class="title">
-            <div class="slide-text fade-in"></div>
-            <h1 class="slide-title">Join The Community Events</h1>
-            <p class="slide-subtitle"><a href=">CatalystSwarm.com/Building-Communities" target="_blank"
-                    rel="noopener noreferrer">CatalystSwarm.com/Building-Communities</a></p>
-        </div>
-    </div>
-
-    <div class="slide">
-        <div class="card">
-            <img class="slide-logo" src="path/to/gimbalabs-logo.png" alt="Gimbalabs Logo" />
-            <h3 class="card-title">Gimbalabs Developer Community</h3>
-            <p class="card-date">Tuesdays – 18:00 UTC</p>
-            <p class="card-twitter">The weekly playground sessions, a place to meet awesome projects and people at
-                the
-                Gimbalabs Developer Community.</p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/lidonation-logo.png" alt="Lidonation Logo" />
-            <h3 class="card-title">Lidonation</h3>
-            <p class="card-date">Wednesdays – 15:00 UTC</p>
-            <p class="card-twitter">Community-driven initiatives which aim to build solutions and relations between
-                climate friendship and blockchain technology.</p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/cardano4climate-logo.png" alt="Cardano 4 Climate Logo" />
-            <h3 class="card-title">Cardano 4 Climate</h3>
-            <p class="card-date">Saturdays – 17:00 UTC</p>
-            <p class="card-twitter">Each Saturday, Swarm members and the community come together to write human code
-                for
-                blockchain ecosystems.</p>
-        </div>
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/swarmsessions-logo.png" alt="Swarm Sessions Logo" />
-            <h3 class="card-title">Swarm Sessions</h3>
-            <p class="card-date">Tuesdays, Wednesdays & Fridays – 3:30am UTC</p>
-            <p class="card-twitter">Swarm Sessions is a community-driven initiative that helps and supports the
-                community and newcomers to engage with Cardano and the Catalyst Ecosystem.</p>
-        </div>
-
-
-        <div class="card">
-            <img class="slide-logo" src="path/to/swarmsessions-logo.png" alt="Swarm Sessions Logo" />
-            <h3 class="card-title">CARDANO CATALYST WOMEN</h3>
-            <p class="card-date"><a href=">https://CardanoCatalystWomen.com" target="_blank"
-                    rel="noopener noreferrer">+info: CardanoCatalystWomen.com</a></p>
-            <p class="card-twitter">Empowering diversity through relationship building, research, education, and
-                mentorship</p>
-        </div>
-    </div>
-
-
-    <!-- Content for Slide 6 -->
-    <div class="slide">
-        <div class="slide-text fade-in">
-            <h2 class="slide-title">Want to Host a Breakout Room or</h2>
-            <h2 class="slide-title">Get your Event on Swarm Calendar?</h2>
+        <div class="card-container">
             <div class="card">
-                <img class="slide-logo" src="path/to/gimbalabs-logo.png" alt="Gimbalabs Logo" />
-                <h3 class="card-title">Fill the Form!</h3>
-                <p class="card-date">Scan:</p>
-                <img src="">
-                <p class="card-twitter">or visit: LINK</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="slide">
-        <div class="title">
-            <h1 class="slide-title">Breakout Rooms</h1>
-            <div class="card">
-                <img class="slide-logo" src="path/to/pacific-logo.png" alt="Pacific Logo" />
+                <img class="slide-logo" src="images/logos/Cardano-RGB_Logo-Stack-White.png" alt="Pacific Logo" />
                 <h3 class="card-title">Pacific Townhall</h3>
                 <h3 class="card-date">Each 2nd Thursday - 04:00 am UTC</h3>
                 <p class="card-twitter">Twitter: @pacific_townhall</p>
@@ -273,7 +125,7 @@
             </div>
 
             <div class="card">
-                <img class="slide-logo" src="path/to/latam-logo.png" alt="LATAM Logo" />
+                <img class="slide-logo" src="images/logos/lcc-loogo.jpg" alt="LATAM Logo" />
                 <h3 class="card-title">LATAM Townhall</h3>
                 <p class="card-date">Bi-weekly on Thursday - 21:30 UTC</p>
                 <p class="card-twitter">Twitter: <a href="https://twitter.com/LATAMCardano" target="_blank"
@@ -281,8 +133,171 @@
                 <p class="card-registration">Registration: <a href="http://bit.ly/3O3an1S" target="_blank"
                         rel="noopener noreferrer">Register Here</a></p>
             </div>
+
+            <div class="card">
+                <img class="slide-logo" src="path/to/brasil-logo.png" alt="Townhall Brasil Logo" />
+                <h3 class="card-title">Townhall Brasil</h3>
+                <p class="card-date">Bi-weekly on Thursday - 21:30 UTC</p>
+                <p class="card-twitter">Twitter: <a href="https://twitter.com/CatalystBrasil" target="_blank"
+                        rel="noopener noreferrer">@CatalystBrasil</a></p>
+                <p class="card-registration">Registration: <a href="http://bit.ly/3O3an1S" target="_blank"
+                        rel="noopener noreferrer">Register Here</a></p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="images/logos/ecth-logo.jpg" alt="Europe Logo" />
+                <h3 class="card-title">Europe Townhall</h3>
+                <p class="card-date">Each 2nd Thursday - 17:30 UTC</p>
+                <p class="card-twitter">Twitter: <a href="https://twitter.com/EuCardano" target="_blank"
+                        rel="noopener noreferrer">@EuCardano</a></p>
+                <p class="card-registration">Registration: <a
+                        href="https://zoom.us/meeting/register/tJUlcO2urDIsGtW-tNJtRYkhifo12e1RO_eR" target="_blank"
+                        rel="noopener noreferrer">Register Here</a></p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="images/logos/Cardano-RGB_Logo-Stack-White.png" alt="South Asia Logo" />
+                <h3 class="card-title">South Asia Town Hall</h3>
+                <p class="card-date">Each 2nd Thursday - 18:45 UTC</p>
+                <p class="card-twitter">Twitter: @southasia_townhall</p>
+                <p class="card-registration">Registration: <a href="link/to/registration" target="_blank"
+                        rel="noopener noreferrer">Register Here</a></p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="images/logos/ceth-logo.jpg" alt="Eastern Logo" />
+                <h3 class="card-title">Eastern Townhall</h3>
+                <p class="card-date">Each 2nd Saturday - 09:00 UTC</p>
+                <p class="card-twitter">Twitter: <a href="https://twitter.com/c3eth" target="_blank"
+                        rel="noopener noreferrer">@c3eth</a></p>
+                <p class="card-registration">Registration: <a href="link/to/registration" target="_blank"
+                        rel="noopener noreferrer">Register Here</a></p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="images/logos/Cardano-RGB_Logo-Stack-White.png" alt="MENA Logo" />
+                <h3 class="card-title">MENA Townhall</h3>
+                <p class="card-date">Each 2nd Thursday - 18:45 UTC</p>
+            </div>
+
+            <div class="card">
+                <img class="slide-logo" src="images/logos/ath-logo.png" alt="Africa Logo" />
+                <h3 class="card-title">Africa Townhall</h3>
+                <p class="card-date">Each 2nd Friday - 18:00 UTC</p>
+                <p class="card-twitter">Twitter: <a href="https://twitter.com/africa_townhall" target="_blank"
+                        rel="noopener noreferrer">@africa_townhall</a></p>
+            </div>
         </div>
     </div>
+    <div class="slide">
+        <div class="div-with-break">
+            <div class="title">
+                <h1 class="slide-title">Join The Community Events</h1>
+                <h2 class="slide-subtitle">CatalystSwarm.com/Building-Communities</h2>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/gimbalabs-logo.jpg" alt="Gimbalabs Logo" />
+                    <h3 class="card-title">Gimbalabs Developer Community</h3>
+                    <p class="card-date">Tuesdays – 18:00 UTC</p>
+                    <p class="card-twitter">The weekly playground sessions, a place to meet awesome projects and
+                        people at
+                        the
+                        Gimbalabs Developer Community.</p>
+                </div>
+
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/lidonation-logo.jpg" alt="Lidonation Logo" />
+                    <h3 class="card-title">Lidonation</h3>
+                    <p class="card-date">Wednesdays – 15:00 UTC</p>
+                    <p class="card-twitter">Community-driven initiatives which aim to build solutions and
+                        relations between
+                        climate friendship and blockchain technology.</p>
+                </div>
+
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/c4c-logo.jpg" alt="Cardano 4 Climate Logo" />
+                    <h3 class="card-title">Cardano 4 Climate</h3>
+                    <p class="card-date">Saturdays – 17:00 UTC</p>
+                    <p class="card-twitter">Each Saturday, Swarm members and the community come together to
+                        write human code
+                        for
+                        blockchain ecosystems.</p>
+                </div>
+
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/swarms-1.png" alt="Swarm Sessions Logo" />
+                    <h3 class="card-title">Swarm Sessions</h3>
+                    <p class="card-date">Tuesdays, Wednesdays & Fridays – 3:30am UTC</p>
+                    <p class="card-twitter">Swarm Sessions is a community-driven initiative that helps and
+                        supports the
+                        community and newcomers to engage with Cardano and the Catalyst Ecosystem.</p>
+                </div>
+
+
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/ccw-logo.jpg" alt="Cardano Catalyst Logo" />
+                    <h3 class="card-title">CARDANO CATALYST WOMEN</h3>
+                    <p class="card-date"><a href="https://CardanoCatalystWomen.com" target="_blank"
+                            rel="noopener noreferrer">+info: CardanoCatalystWomen.com</a></p>
+                    <p class="card-twitter">Empowering diversity through relationship building, research,
+                        education, and
+                        mentorship</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content for Slide 6 -->
+    <div class="slide">
+        <div class="div-with-break">
+            <div class="title">
+                <h1 class="slide-title">Want to Host a Breakout Room or</h1>
+                <h1 class="slide-title">Get your Event on Swarm Calendar?</h1>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/swarms-1.png" alt="Swarm Logo" />
+                    <h3 class="card-title">Fill the Form!</h3>
+                    <p class="card-date">Scan:</p>
+                    <img src="images/qr-codes/Sarm-form-ath-link.PNG">
+                    <p class="card-date"><a href="https://forms.gle/rQrrZSCVEyekF8sG9" target="_blank"
+                            rel="noopener noreferrer">or click here</a></p>
+                    <p class="card-twitter">to visit form link</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide">
+        <div class="div-with-break">
+            <div class="title">
+                <h1 class="slide-title">Breakout Rooms</h1>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/Cardano-RGB_Logo-Stack-White.png" alt="We're Cardano" />
+                    <h3 class="card-title">Sala de Café</h3>
+                    <h3 class="card-date">Cardano Hispanic & Portuguese Speaking Community</h3>
+                </div>
+
+                <div class="card">
+                    <img class="slide-logo" src="images/logos/Cardano-RGB_Logo-Stack-White.png" alt="We're Cardano" />
+                    <h3 class="card-title">Sala de Café</h3>
+                    <h3 class="card-date">Cardano Hispanic & Portuguese Speaking Community</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slide-controls">
+        <button class="slide-3-button">Next</button>
+        <button class="slide-5-button">Previous</button>
+    </div>
+
 
     <script>
         const slides = document.querySelectorAll('.carousel-slide');
@@ -314,9 +329,12 @@
         const nextButton = document.querySelector('.slide-3-button');
         const previousButton = document.querySelector('.slide-5-button');
 
-        nextButton.addEventListener('click', showNextSlide);
-        previousButton.addEventListener('click', showPreviousSlide);
+        if (nextButton && previousButton) {
+            nextButton.addEventListener('click', showNextSlide);
+            previousButton.addEventListener('click', showPreviousSlide);
+        }
     </script>
+
 </body>
 
 </html>
