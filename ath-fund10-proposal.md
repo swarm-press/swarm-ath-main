@@ -1,5 +1,5 @@
 
-#The SWARM After TownHall Fund10 proposal
+# The SWARM After TownHall Fund10 proposal
 
 # Submission Form Sections
 ### These are the sections of the form you will in Ideascale to submit your proposal
@@ -59,9 +59,25 @@ Catalyst Swarm Website: We will update the Catalyst Swarm website with relevant 
 Social Media Channels: We will share updates, highlights, and key outcomes from the After Town Hall sessions using the catalyst swarm social media channels (twitter, youtube, github, gitbook, etc). This will help us reach a broader audience within the Cardano community and beyond.
 
 # CAPABILITY/ FEASIBILITY
-## What is your capability to deliver your project with high levels of trust and accountability? 
+## What is your capability to deliver your project with high levels of trust and accountability?
+The ATH Team delivered, up to this date, 93 After TownHall Events, as can be verified in the link After TownHall pipeline Spreadsheet.
+
 ## What are the main goals for the project and how will you validate if your approach is feasible?
+The main goals for the project are to improve the format, quality, and execution of the After Town Hall (ATH) events, support developers, designers, and projects in the Cardano ecosystem, provide an inclusive and safe space for community members to connect and collaborate, and facilitate the onboarding of newcomers into the community.
+
+To validate the feasibility of the approach, the project team will focus on several key aspects:
+
+Attendance and participation: The success of the ATH is dependent on the community's engagement and participation. The team will track the number of attendees, the level of participation in breakout rooms, and the feedback received from participants to assess the effectiveness of the events.
+
+Community feedback and satisfaction: The project team will actively seek feedback from the community to understand their experiences, identify areas for improvement, and gauge overall satisfaction with the ATH events. This feedback will be collected through surveys, direct communication channels, and engagement in discussions during and after the events.
+
+Onboarding and support: The team will assess the effectiveness of the ATH in onboarding newcomers and providing them with the necessary resources and guidance to get involved in the community. 
+
+Expansion and duplication: The project team has been duplicating and adapting the ATH format to local communities, languages, and cultures. The team will support the establishment and growth of local town halls, assess the level of participation and engagement in these local events, and gather feedback from participants to validate the scalability and replicability of the approach.
+
 ## Please provide a detailed breakdown of your project’s milestones and each of the main tasks or activities to reach the milestone plus the expected timeline for the delivery.
+
+
 ## Please describe the deliverables, outputs and intended outcomes of each milestone. 
 
 # RESOURCES & VALUE FOR MONEY
